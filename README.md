@@ -4,3 +4,6 @@
 nii-nvim is a no-nonsense, minimal base neovim with sane default and extensibility in mind.
 
 Currently, nii-nvim is a work in progress, contributions are always welcome.
+
+#### Screenshots
+![Dashboard](img/scrot-1.png)
