@@ -33,3 +33,9 @@ map("", "<C-c>", ":CommentToggle<Cr>", opt)
 
 -- nvim-tree binds
 map("", "<C-t>", ":NvimTreeToggle<Cr>", opt)
+
+-- compe keybinds
+-- map("i", "<Tab>", "v:lua.tab_complete()", {expr = true})
+-- map("s", "<Tab>", "v:lua.tab_complete()", {expr = true})
+-- map("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
+-- map("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})

@@ -9,48 +9,44 @@ return require('packer').startup(function(use)
 	use 'nvim-lua/completion-nvim'
 
 	-- statusline (lualine)
-	use {
-		'hoob3rt/lualine.nvim',
-		requires = {'kyazdani42/nvim-web-devicons', opt = true}
-	}
+	use { 'hoob3rt/lualine.nvim', requires = {'kyazdani42/nvim-web-devicons', opt = true} }
 
 	-- bufferline (think tabs)
 	use {'akinsho/nvim-bufferline.lua', requires = 'kyazdani42/nvim-web-devicons'}
 
+	-- tabline
+	use {'seblj/nvim-tabline', requires = {'kyazdani42/nvim-web-devicons'} }
+
 	-- nvim-compe
 	use 'hrsh7th/nvim-compe'
+
+	-- lspkind-nvim
+	use 'onsails/lspkind-nvim'
 
 	-- autopairs plugin
 	use 'windwp/nvim-autopairs'
 
 	-- telescope plugin
-	use {
-		'nvim-telescope/telescope.nvim',
-		requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
-	}
+	use { 'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}} }
 
 	-- fzf telescope
-	use {
-		'nvim-telescope/telescope-fzf-native.nvim',
-		run = 'make'
-	}
+	use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
 	-- nvim-treesitter
-    	use {
-        	'nvim-treesitter/nvim-treesitter',
-        	run = ':TSUpdate'
-    	}
+    	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
 	-- dashboard
 	use 'glepnir/dashboard-nvim'
 
-	use {
-		'kyazdani42/nvim-tree.lua',
-    		requires = 'kyazdani42/nvim-web-devicons'
-	}
+	use { 'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons' }
 
 	-- nvim-comment
 	use 'terrortylor/nvim-comment'
+
+	-- themes
+	use "sainnhe/everforest"	-- everforest
+	use "relastle/bluewery.vim"	-- bluewery
+	use "joshdick/onedark.vim"	-- onedark
 
 	-- TODO: Add support for galaxyline
 	-- statusline (galaxyline)
