@@ -20,7 +20,7 @@ local opt = {}  --empty opt for maps with no extra options
 --		map("n", "<C-n>", ":set rnu!<Cr>", opt)
 
 --map leader
-cmd('let mapleader="Space"')
+cmd('let mapleader=" "')
 
 -- toggle line numbers
 map("n", "<C-n>", ":set rnu!<Cr>", opt)
@@ -39,3 +39,13 @@ map("", "<C-t>", ":NvimTreeToggle<Cr>", opt)
 -- map("s", "<Tab>", "v:lua.tab_complete()", {expr = true})
 -- map("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
 -- map("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
+
+-- buffer management
+map("n", "<leader>n", ":bn<CR>", opt)
+map("n", "<leader>p", ":bp<CR>", opt)
+map("n", "<leader>d", ":bd<CR>", opt)
+
+-- split window management
+map("n", "<leader>s", ":split<CR>", opt)
+map("n", "<leader>v", ":vsplit<CR>", opt)
+
