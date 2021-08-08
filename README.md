@@ -7,3 +7,4 @@ Currently, nii-nvim is a work in progress, contributions are always welcome.
 
 #### Screenshots
 ![Dashboard](img/scrot-1.png)
+![Code](img/scrot-2.png)
