@@ -17,10 +17,9 @@ the preferred channel for [bug reports](#bugs), [features requests](#features)
 and [submitting pull requests](#pull-requests), but please respect the following
 restrictions:
 
-* Please **do not** use the issue tracker for personal support requests (use
-  [Stack Overflow](https://stackoverflow.com/questions/tagged/html5boilerplate)).
+* You are allowed to use the issue tracker for personal support requests for the code present within the project, however, I **Can not** guarantee help for custom code, or stuff not realted to the main codebase.
 
-* Please **do not** derail or troll issues. Keep the discussion on topic and
+* Please **do not** derail issues. Keep the discussion on topic and
   respect the opinions of others.
 
 <a name="bugs"></a>
@@ -113,26 +112,15 @@ included in the project:
    git checkout -b <branch-name>
    ```
 
-4. Commit your changes in logical chunks. Please adhere to these [git commit
-   message guidelines](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
-   or your code is unlikely be merged into the main project. Use Git's
-   [interactive rebase](https://help.github.com/articles/about-git-rebase/)
-   feature to tidy up your commits before making them public.
+4. Commit your changes in logical chunks. Please keep your commit messages short but consise.
 
-5. Locally merge (or rebase) the upstream development branch into your topic branch:
-
-   ```bash
-   git pull [--rebase] upstream master
-   ```
-
-6. Push your topic branch up to your fork:
+5. Push your topic branch up to your fork:
 
    ```bash
    git push origin <topic-branch-name>
    ```
 
-7. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
+6. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
     with a clear title and description.
 
-**IMPORTANT**: By submitting a patch, you agree to allow the project
-owners to license your work under the terms of the [GPLv3 LICENCE](LICENSE).
+**IMPORTANT**: By submitting a pull request, you agree to allow me to license your work under the terms of the [GPLv3 LICENCE](LICENSE).
