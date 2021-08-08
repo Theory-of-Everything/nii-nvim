@@ -4,11 +4,10 @@ return require('packer').startup(function(use)
 
 	-- lsp realted plugins
 	-- includes autocomplete and lsp suggestions
-	use 'neovim/nvim-lspconfig'
-	use 'kabouzeid/nvim-lspinstall'
-	use 'nvim-lua/completion-nvim'
-	use 'hrsh7th/nvim-compe'
-	use 'onsails/lspkind-nvim'
+	use 'neovim/nvim-lspconfig'		-- nvim lsp implementaion plugin
+	use 'kabouzeid/nvim-lspinstall'		-- utility for installing lsp servers
+	use 'hrsh7th/nvim-compe'		-- autocompletion support
+	use 'onsails/lspkind-nvim'		-- lsp gui suggestions
 
 	-- utility plugins
 	-- these plugins are all realted to editor configs
@@ -24,11 +23,18 @@ return require('packer').startup(function(use)
 	-- these add in a bit more bling and flair to nvi
     	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 	use 'glepnir/dashboard-nvim'
+	use 'norcalli/nvim-colorizer.lua'
 
 	-- themes
+	-- popular themes incoming
+	use "joshdick/onedark.vim"	-- onedark
+	use "phanviet/vim-monokai-pro"	-- monokai
+	use "morhetz/gruvbox"		-- gruvbox
+	use "shaunsingh/nord.nvim"	-- nord
+
+	-- neesh themes
 	use "sainnhe/everforest"	-- everforest
 	use "relastle/bluewery.vim"	-- bluewery
-	use "joshdick/onedark.vim"	-- onedark
 
 	-- TODO: Add support for galaxyline
 	-- statusline (galaxyline)
