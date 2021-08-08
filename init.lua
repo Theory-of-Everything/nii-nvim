@@ -13,8 +13,8 @@ require('settings')
 require('plug')
 
 vim.opt.termguicolors = true
-scheme.load_scheme('night-owl')
-scheme.load_lualine_scheme('minimaldark')
+scheme.load_scheme('onedark')
+scheme.load_lualine_scheme('onedark')
 
 -- load plugin configuration
 require('config.dashboard')
