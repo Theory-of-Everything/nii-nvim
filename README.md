@@ -7,18 +7,34 @@
 </div>
 
 <div align="center">
+  <a href="https://github.com/Theory-of-Everything/nii-nvim/wiki">Wiki</a>
+  <span> • </span>
+  <a href="https://github.com/Theory-of-Everything/nii-nvim/wiki/Installation">Install</a>
+  <span> • </span>
+  <a href="https://github.com/Theory-of-Everything/nii-nvim/blob/master/CONTRIBUTING.md">Contribute</a>
+  <p></p>
+</div>
+
+<div align="center">
   
 [![Lua](https://img.shields.io/badge/Made%20With-Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white)]()
   
 </div>
-  
+
 nii-nvim is a very minimal nvim dotfiles focused on creating a functional editor with a minmal amount of plugins. nii-nvim also has the user in mind by being very extensible and documented.
+#### **NOTE**: nii-nvim is currently under development, meaning that many things may not work as intended, or may not be implemented at all.
 
 ## Why nii-nvim?
 Many of the neovim configurations that exist (i.e. NvChad, Spacevim, etc.) are either heavily bloated, difficult to extend, or tailored to a specific task/workflows. nii-nvim aims to solve this by providing the end user with a base configuration that contains everything needed for a very basic editor with all of the base components in place, so that the end user can create there own workflow from that base. nii-nvim contains a bunch of features including lsp integration, snippets (planned), autocomplete, and themes.
 
 The end goal of nii-nvim is to be use as a base config for users to extend and add upon, leading to a more unique editing experience.
 Also the name is cute, and sounds small. 	(・3・)
+
+## Requirements
+`neovim 5.0 or greater`
+`fzf`
+`git`
+`A Nerd Font` for tree and tab icon support
 
 ## Features
 * Fully documented config, designed to be understandable by both inexperienced and experienced (Work in progress)
@@ -57,7 +73,7 @@ Theme | Repository
 ------|-----------
 OneDark | [joshdick/onedark.vim](https://github.com/joshdick/onedark.vim)
 Monokai | [sickill/vim-monokai](https://github.com/sickill/vim-monokai)
-Gruvbox | [shaunsingh/nord.nvim](https://github.com/morhetz/gruvbox)
+Gruvbox | [morhetz/gruvbox](https://github.com/morhetz/gruvbox)
 Nord | [shaunsingh/nord.nvim](https://github.com/shaunsingh/nord.nvim)
 Everforest | [sainnhe/everforest](https://github.com/sainnhe/everforest)
 Bluewery | [relastle/bluewery.vim](https://github.com/relastle/bluewery.vim)
