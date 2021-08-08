@@ -1,47 +1,29 @@
 return require('packer').startup(function(use)
-	-- packer self manage
+	-- packer self management
 	use 'wbthomason/packer.nvim'
 
-	-- lsp plugin with install plug
+	-- lsp realted plugins
+	-- includes autocomplete and lsp suggestions
 	use 'neovim/nvim-lspconfig'
 	use 'kabouzeid/nvim-lspinstall'
-	-- completion plugin
 	use 'nvim-lua/completion-nvim'
-
-	-- statusline (lualine)
-	use { 'hoob3rt/lualine.nvim', requires = {'kyazdani42/nvim-web-devicons', opt = true} }
-
-	-- bufferline (think tabs)
-	use {'akinsho/nvim-bufferline.lua', requires = 'kyazdani42/nvim-web-devicons'}
-
-	-- tabline
-	use {'seblj/nvim-tabline', requires = {'kyazdani42/nvim-web-devicons'} }
-
-	-- nvim-compe
 	use 'hrsh7th/nvim-compe'
-
-	-- lspkind-nvim
 	use 'onsails/lspkind-nvim'
 
-	-- autopairs plugin
+	-- utility plugins
+	-- these plugins are all realted to editor configs
 	use 'windwp/nvim-autopairs'
-
-	-- telescope plugin
+	use { 'hoob3rt/lualine.nvim', requires = {'kyazdani42/nvim-web-devicons', opt = true} }
+	use {'akinsho/nvim-bufferline.lua', requires = 'kyazdani42/nvim-web-devicons'}
 	use { 'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}} }
-
-	-- fzf telescope
-	use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-
-	-- nvim-treesitter
-    	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-
-	-- dashboard
-	use 'glepnir/dashboard-nvim'
-
 	use { 'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons' }
-
-	-- nvim-comment
+	use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 	use 'terrortylor/nvim-comment'
+
+	-- cosmetic addition plugins
+	-- these add in a bit more bling and flair to nvi
+    	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+	use 'glepnir/dashboard-nvim'
 
 	-- themes
 	use "sainnhe/everforest"	-- everforest
