@@ -71,4 +71,4 @@ Easy Theme Switching (lualine/scheme) | In Progress
 Lualine colorscheme integration | In Progress
 Built-in Documentation | Not Finished
 LuaSnip Support | Planned
-Bas16-like custom theme configuration | Planned
+Base16-like custom theme configuration | Planned
