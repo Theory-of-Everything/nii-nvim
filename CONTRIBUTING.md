@@ -1,4 +1,4 @@
-# Contributing to HTML5 Boilerplate
+# Contributing to nii-nvim
 
 Decided to help and contribut to [nii-nvim](https://github.com/Theory-of-Everything/nii-nvim)? Great! I am always looking for contributors!
 
