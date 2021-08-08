@@ -7,6 +7,15 @@
 </div>
 
 <div align="center">
+	<a href="">Wiki</a>
+  <span> • </span>
+  <a href="">Install</a>
+  <span> • </span>
+  <a href="">Contribute</a>
+  <p></p>
+</div>
+
+<div align="center">
   
 [![Lua](https://img.shields.io/badge/Made%20With-Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white)]()
   
