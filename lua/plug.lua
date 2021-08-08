@@ -28,13 +28,14 @@ return require('packer').startup(function(use)
 	-- themes
 	-- popular themes incoming
 	use "joshdick/onedark.vim"	-- onedark
-	use "phanviet/vim-monokai-pro"	-- monokai
+	use "sickill/vim-monokai"	-- monokai
 	use "morhetz/gruvbox"		-- gruvbox
 	use "shaunsingh/nord.nvim"	-- nord
 
 	-- neesh themes
 	use "sainnhe/everforest"	-- everforest
 	use "relastle/bluewery.vim"	-- bluewery
+	use "haishanh/night-owl.vim"	-- Night Owl
 
 	-- TODO: Add support for galaxyline
 	-- statusline (galaxyline)

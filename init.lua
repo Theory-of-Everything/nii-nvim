@@ -13,7 +13,7 @@ require('settings')
 require('plug')
 
 vim.opt.termguicolors = true
-scheme.load_scheme('bluewery')
+scheme.load_scheme('night-owl')
 scheme.load_lualine_scheme('minimaldark')
 
 -- load plugin configuration
@@ -28,4 +28,3 @@ require('config.lualine')
 require('config.nvim-comment')
 require('config.nvim-treesitter')
 require('config.nvim-colorizer')
-
