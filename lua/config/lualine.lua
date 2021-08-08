@@ -1,8 +1,10 @@
-local lualine_theme = require('theme.lualine.minimaldark')
+local scheme = require('scheme')
+
+local lualine_theme = require('themes.lualine.'..scheme.scheme)
 require('lualine').setup{
 	options = {
-  		section_separators = {'', ''},
-  		component_separators = {'', ''},
+  		section_separators = {'', ''},
+  		component_separators = {'', ''},
 		theme = lualine_theme
 	},
 	sections = {
