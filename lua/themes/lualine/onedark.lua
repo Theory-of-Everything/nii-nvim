@@ -4,8 +4,8 @@
 local colors = {
   base_fg 	= '#000000',
   light_fg	= '#56B6C2',
-  secondary	= '#1D2026',
-  background	= '#131519',
+  secondary	= '#1f2228',
+  background	= '#17191E',
   norm_bg 	= '#E5C07B',
   ins_bg	= '#61AFEF',
   vis_bg	= '#C678DD',
@@ -31,17 +31,17 @@ return {
     c = {bg = colors.background, fg = colors.light_fg}
   },
   replace = {
-    a = {bg = colors.rep_bg, fg = colors.white, gui = 'bold'},
+    a = {bg = colors.rep_bg, fg = colors.base_fg, gui = 'bold'},
     b = {bg = colors.secondary, fg = colors.light_fg},
     c = {bg = colors.background, fg = colors.light_fg}
   },
   command = {
-    a = {bg = colors.cmd_bg, fg = colors.white, gui = 'bold'},
+    a = {bg = colors.cmd_bg, fg = colors.base_fg, gui = 'bold'},
     b = {bg = colors.secondary, fg = colors.light_fg},
     c = {bg = colors.background, fg = colors.light_fg}
   },
   inactive = {
-    a = {bg = colors.int_bg, fg = colors.white, gui = 'bold'},
+    a = {bg = colors.int_bg, fg = colors.fight_fg, gui = 'bold'},
     b = {bg = colors.secondary, fg = colors.light_fg},
     c = {bg = colors.background, fg = colors.light_fg}
   }
