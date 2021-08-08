@@ -15,13 +15,13 @@
 nii-nvim is a very minimal nvim dotfiles focused on creating a functional editor with a minmal amount of plugins. nii-nvim also has the user in mind by being very extensible and documented.
 
 ## Why nii-nvim?
-Many of the neovim configurations that exsist (i.e. NvChad, Spacevim, etc.) are either havily bloated, difficult to extend, or taliored to a specfic task/workflows. nii-nvim aims to solve this by providing the end user with a base configuration that contains everything needed for a very basic editor with all of the base compenets in place, so that the end user can create ther own workflow from that base. nii-nvim contains a bunch of features including lsp integration, snippets (planned), autocomplete, and themes.
+Many of the neovim configurations that exist (i.e. NvChad, Spacevim, etc.) are either heavily bloated, difficult to extend, or tailored to a specific task/workflows. nii-nvim aims to solve this by providing the end user with a base configuration that contains everything needed for a very basic editor with all of the base components in place, so that the end user can create there own workflow from that base. nii-nvim contains a bunch of features including lsp integration, snippets (planned), autocomplete, and themes.
 
 The end goal of nii-nvim is to be use as a base config for users to extend and add upon, leading to a more unique editing experience.
 Also the name is cute, and sounds small. 	(・3・)
 
 ## Features
-* Fully documented config, designed to be undstandable by both inexperienced and experienced (Work in progress)
+* Fully documented config, designed to be understandable by both inexperienced and experienced (Work in progress)
 * Sane Defaults for ease of mind ᕕ( ᐛ )ᕗ
 * Popular coloschemes pre-packaged with lualine integration including:
   * One Dark
@@ -29,7 +29,7 @@ Also the name is cute, and sounds small. 	(・3・)
   * Gruvbox
   * Monokai
   * and a few others!!
-* Easily Extensible configuraion
+* Easily Extensible configuration
 * Swag 	(̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄
 
 ## Plugins
@@ -56,7 +56,7 @@ Comment | Comment a line with a keybind | [terrortylor/nvim-comment](https://git
 ## Screenshots
 Dashboard View (Onedark Theme)
 ![Dashboard](img/scrot-1.png)
-Genral Interface
+General Interface
 ![Code](img/scrot-code.png)
 Lspkind Suggestions
 ![Lspkind](img/scrot-lspkind.png)
