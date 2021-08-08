@@ -51,7 +51,16 @@ Telescope | Search for anything from files to buffers | [nvim-telescope/telescop
 Nvim Tree | A sidebar file tree for neovim | [kyazdani42/nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
 Comment | Comment a line with a keybind | [terrortylor/nvim-comment](https://github.com/terrortylor/nvim-comment)
 
-
+### Themes
+nii-nvim comes pre-bundled with 7 themes.
+Theme | Repository
+OneDark | [joshdick/onedark.vim](https://github.com/joshdick/onedark.vim)
+Monokai | [sickill/vim-monokai](https://github.com/sickill/vim-monokai)
+Gruvbox | [shaunsingh/nord.nvim](https://github.com/morhetz/gruvbox)
+Nord | [shaunsingh/nord.nvim](https://github.com/shaunsingh/nord.nvim)
+Everforest | [sainnhe/everforest](https://github.com/sainnhe/everforest)
+Bluewery | [relastle/bluewery.vim](https://github.com/relastle/bluewery.vim)
+Night Owl | [haishanh/night-owl.vim](https://github.com/haishanh/night-owl.vim)
 
 ## Screenshots
 Dashboard View (Onedark Theme)
@@ -70,5 +79,6 @@ Milestone | Status
 Easy Theme Switching (lualine/scheme) | In Progress
 Lualine colorscheme integration | In Progress
 Built-in Documentation | Not Finished
+Better install script | Planned
 LuaSnip Support | Planned
 Base16-like custom theme configuration | Planned
