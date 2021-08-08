@@ -1,6 +1,12 @@
 <h1 align="center">nii-nvim - a no-nonsense neovim configuration</h1>
 
 <div align="center">
+
+![Fetch](img/scrot-fetch.png)
+
+</div>
+
+<div align="center">
   
 [![Lua](https://img.shields.io/badge/Made%20With-Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white)]()
   
@@ -51,7 +57,7 @@ Comment | Comment a line with a keybind | [terrortylor/nvim-comment](https://git
 Dashboard View (Onedark Theme)
 ![Dashboard](img/scrot-1.png)
 Genral Interface
-![Code](img/scrot-2.png)
+![Code](img/scrot-code.png)
 Lspkind Suggestions
 ![Lspkind](img/scrot-lspkind.png)
 Telescope.nvim
