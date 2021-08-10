@@ -22,7 +22,7 @@
 </div>
 
 nii-nvim is a very minimal nvim dotfiles focused on creating a functional editor with a minmal amount of plugins. nii-nvim also has the user in mind by being very extensible and documented.
-*NOTE*: nii-nvim is currently under development, meaning that many things may not work as intended, or may not be implemented at all.
+#### **NOTE**: nii-nvim is currently under development, meaning that many things may not work as intended, or may not be implemented at all.
 
 ## Why nii-nvim?
 Many of the neovim configurations that exist (i.e. NvChad, Spacevim, etc.) are either heavily bloated, difficult to extend, or tailored to a specific task/workflows. nii-nvim aims to solve this by providing the end user with a base configuration that contains everything needed for a very basic editor with all of the base components in place, so that the end user can create there own workflow from that base. nii-nvim contains a bunch of features including lsp integration, snippets (planned), autocomplete, and themes.
