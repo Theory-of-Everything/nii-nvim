@@ -31,10 +31,10 @@ The end goal of nii-nvim is to be use as a base config for users to extend and a
 Also the name is cute, and sounds small. 	(・3・)
 
 ## Requirements
-`neovim 5.0 or greater`
-`fzf`
-`git`
-`A Nerd Font` for tree and tab icon support
+* `neovim 5.0 or greater`
+* `fzf`
+* `git`
+* `A Nerd Font` for tree and tab icon support
 
 ## Features
 * Fully documented config, designed to be understandable by both inexperienced and experienced (Work in progress)
