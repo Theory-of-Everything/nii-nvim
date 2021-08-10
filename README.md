@@ -29,6 +29,12 @@ Many of the neovim configurations that exist (i.e. NvChad, Spacevim, etc.) are e
 The end goal of nii-nvim is to be use as a base config for users to extend and add upon, leading to a more unique editing experience.
 Also the name is cute, and sounds small. 	(・3・)
 
+## Requirements
+`neovim 5.0 or greater`
+`fzf`
+`git`
+`A Nerd Font` for tree and tab icon support
+
 ## Features
 * Fully documented config, designed to be understandable by both inexperienced and experienced (Work in progress)
 * Sane Defaults for ease of mind ᕕ( ᐛ )ᕗ
@@ -66,7 +72,7 @@ Theme | Repository
 ------|-----------
 OneDark | [joshdick/onedark.vim](https://github.com/joshdick/onedark.vim)
 Monokai | [sickill/vim-monokai](https://github.com/sickill/vim-monokai)
-Gruvbox | [shaunsingh/nord.nvim](https://github.com/morhetz/gruvbox)
+Gruvbox | [morhetz/gruvbox](https://github.com/morhetz/gruvbox)
 Nord | [shaunsingh/nord.nvim](https://github.com/shaunsingh/nord.nvim)
 Everforest | [sainnhe/everforest](https://github.com/sainnhe/everforest)
 Bluewery | [relastle/bluewery.vim](https://github.com/relastle/bluewery.vim)
