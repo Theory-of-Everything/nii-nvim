@@ -95,14 +95,14 @@ included in the project:
    # Navigate to the newly cloned directory
    cd nii-nvim
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/theory-of-everything/html5-boilerplate.git
+   git remote add origin https://github.com/theory-of-everything/nii-nvim.git
    ```
 
 2. If you cloned a while ago, get the latest changes from upstream:
 
    ```bash
    git checkout master
-   git pull upstream master
+   git pull origin master
    ```
 
 3. Create a new branch (off the master branch) to
