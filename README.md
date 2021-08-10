@@ -7,11 +7,11 @@
 </div>
 
 <div align="center">
-	<a href="">Wiki</a>
+  <a href="https://github.com/Theory-of-Everything/nii-nvim/wiki">Wiki</a>
   <span> • </span>
-  <a href="">Install</a>
+  <a href="https://github.com/Theory-of-Everything/nii-nvim/wiki/Installation">Install</a>
   <span> • </span>
-  <a href="">Contribute</a>
+  <a href="https://github.com/Theory-of-Everything/nii-nvim/blob/master/CONTRIBUTING.md">Contribute</a>
   <p></p>
 </div>
 
