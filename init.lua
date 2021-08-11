@@ -5,18 +5,26 @@ local cmd = vim.cmd
 cmd('set mouse=a')
 cmd('syntax on')
 
--- keymaps and settings
+-- load keybindings and editor options
 require('keymap')
-require('settings')
+require('options')
 
--- plugins an related options
+-- load all of the packer plugins stuff
 require('plug')
 
+-- enable true color
 vim.opt.termguicolors = true
-scheme.load_scheme('onedark')
-scheme.load_lualine_scheme('onedark')
 
--- load plugin configuration
+-- Load Themes
+-- load editor color theme
+-- scheme.load_scheme('onedark')
+-- load statusline theme
+-- scheme.load_lualine_scheme('onedark')
+-- if you don't  want to specify the theme for each component,
+-- you can use the following function
+scheme.load_shared_scheme('onedark')
+
+-- load individual plugin configurations
 require('config.dashboard')
 require('config.bufferline')
 require('config.lsp')
@@ -28,3 +36,6 @@ require('config.lualine')
 require('config.nvim-comment')
 require('config.nvim-treesitter')
 require('config.nvim-colorizer')
+
+-- load user-made modules
+require('modules')
