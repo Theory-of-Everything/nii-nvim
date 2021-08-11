@@ -1,12 +1,6 @@
 local g = vim.g
 
 g.nvim_tree_side = 'left'
-g.nvim_tree_ignore = { '.git', 'node_modules', '.cache' }
-g.nvim_tree_gitignore = 1
-g.nvim_tree_auto_open = 0
-
-
-g.nvim_tree_side = 'left'
 g.nvim_tree_width = 40
 g.nvim_tree_ignore = { '.git', 'node_modules', '.cache' }
 g.nvim_tree_gitignore = 1
@@ -32,3 +26,9 @@ g.nvim_tree_hijack_cursor = 1
 g.nvim_tree_icon_padding = ' '
 g.nvim_tree_symlink_arrow = ' >> '
 g.nvim_tree_update_cwd = 1
+
+g.nvim_tree_show_icons = {
+	git = 1,
+	folders = 1,
+	files = 1,
+}
