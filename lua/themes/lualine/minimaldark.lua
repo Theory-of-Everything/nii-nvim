@@ -20,7 +20,7 @@ return {
     c = {bg = colors.background, fg = colors.white}
   },
   visual = {
-    a = {bg = colors.pirmary, fg = colors.white, gui = 'bold'},
+    a = {bg = colors.primary, fg = colors.white, gui = 'bold'},
     b = {bg = colors.secondary, fg = colors.white},
     c = {bg = colors.background, fg = colors.white}
   },
