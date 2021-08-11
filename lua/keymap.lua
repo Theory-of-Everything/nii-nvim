@@ -11,7 +11,7 @@ local opt = {}  --empty opt for maps with no extra options
 
 -- MAPPING:
 --	map takes 4 args:
---		The first is the type, wether in all, normal, insert etc. (reference: https://github.com/nanotee/nvim-lua-guide#defining-mappings)
+--		The first is the type, whether in all, normal, insert etc. (reference: https://github.com/nanotee/nvim-lua-guide#defining-mappings)
 --		The Second Arg is the keybind. Just like normal vim way
 --		The Third is the command to execute
 --		The Fourth is other extra options
@@ -23,7 +23,7 @@ local opt = {}  --empty opt for maps with no extra options
 cmd('let mapleader=" "')
 
 -- toggle line numbers
-map("n", "<C-n>", ":set rnu!<Cr>", opt)
+map("n", "<C-n>", ":set rnu!<CR>", opt)
 
 -- copy full file content
 map("n", "<C-a>", ":%y+<CR>", opt)
@@ -40,9 +40,14 @@ map("", "<C-t>", ":NvimTreeToggle<Cr>", opt)
 -- map("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
 -- map("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
 
+-- dashbaord commands
+map("n", "<leader>~", ":Dashboard<CR>", opt)
+
 -- buffer management
+map("n", "<leader>h", ":bf<CR>", opt)
 map("n", "<leader>k", ":bn<CR>", opt)
 map("n", "<leader>j", ":bp<CR>", opt)
+map("n", "<leader>l", ":bl<CR>", opt)
 map("n", "<leader>d", ":bd<CR>", opt)
 
 -- telescope pullup
