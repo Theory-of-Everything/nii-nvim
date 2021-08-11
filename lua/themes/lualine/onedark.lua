@@ -41,7 +41,7 @@ return {
     c = {bg = colors.background, fg = colors.light_fg}
   },
   inactive = {
-    a = {bg = colors.int_bg, fg = colors.fight_fg, gui = 'bold'},
+    a = {bg = colors.int_bg, fg = colors.light_fg, gui = 'bold'},
     b = {bg = colors.secondary, fg = colors.light_fg},
     c = {bg = colors.background, fg = colors.light_fg}
   }

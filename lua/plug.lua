@@ -12,37 +12,32 @@ return require('packer').startup(function(use)
 	-- utility plugins
 	-- these plugins are all realted to editor configs
 	use 'windwp/nvim-autopairs'
-	use { 'hoob3rt/lualine.nvim', requires = {'kyazdani42/nvim-web-devicons', opt = true} }
+	use {'hoob3rt/lualine.nvim', requires = {'kyazdani42/nvim-web-devicons', opt = true} }
 	use {'akinsho/nvim-bufferline.lua', requires = 'kyazdani42/nvim-web-devicons'}
-	use { 'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}} }
-	use { 'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons' }
-	use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+	use {'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}} }
+	use {'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons'}
+	use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
 	use 'terrortylor/nvim-comment'
+	use 'sbdchd/neoformat'
 
 	-- cosmetic addition plugins
 	-- these add in a bit more bling and flair to nvi
-    	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+    	use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 	use 'glepnir/dashboard-nvim'
 	use 'norcalli/nvim-colorizer.lua'
 
+	-- git realted plugins
+	use {'lewis6991/gitsigns.nvim', requires = {'nvim-lua/plenary.nvim'}}
+
 	-- themes
 	-- popular themes incoming
-	use "joshdick/onedark.vim"	-- onedark
-	use "sickill/vim-monokai"	-- monokai
-	use "morhetz/gruvbox"		-- gruvbox
-	use "shaunsingh/nord.nvim"	-- nord
+	use 'joshdick/onedark.vim'	-- onedark
+	use 'sickill/vim-monokai'	-- monokai
+	use 'morhetz/gruvbox'		-- gruvbox
+	use 'shaunsingh/nord.nvim'	-- nord
 
 	-- neesh themes
-	use "sainnhe/everforest"	-- everforest
-	use "relastle/bluewery.vim"	-- bluewery
-	use "haishanh/night-owl.vim"	-- Night Owl
-
-	-- TODO: Add support for galaxyline
-	-- statusline (galaxyline)
-	--use {
-	--	'glepnir/galaxyline.nvim',
-	--	branch = 'main',
-	--	config = function() require('theme/statusline') end,
-	--	requires = {'kyazdani42/nvim-web-devicons', opt = true}
-	--}
+	use 'sainnhe/everforest'	-- everforest
+	use 'relastle/bluewery.vim'	-- bluewery
+	use 'haishanh/night-owl.vim'	-- Night Owl
 end)
