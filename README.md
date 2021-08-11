@@ -94,7 +94,7 @@ Currently there isn't much planned, however that are still some things I have in
 Milestone | Status
 ----------|-------
 Easy Theme Switching (lualine/scheme) | In Progress
-Lualine colorscheme integration | In Progress
+Lualine colorscheme integration | Finished (for now anyway)
 Built-in Documentation | Not Finished
 Better install script | Planned
 LuaSnip Support | Planned
