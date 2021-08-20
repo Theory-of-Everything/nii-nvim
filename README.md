@@ -21,6 +21,8 @@
   
 </div>
 
+# PLEASE DONT SKIP THE README!!!
+
 nii-nvim is a very minimal nvim dotfiles focused on creating a functional editor with a minmal amount of plugins. nii-nvim also has the user in mind by being very extensible and documented.
 #### **NOTE**: nii-nvim is currently under development, meaning that many things may not work as intended, or may not be implemented at all.
 
@@ -91,11 +93,11 @@ Telescope.nvim
 
 ## Roadmap
 Currently there isn't much planned, however that are still some things I have in mind.
-Milestone | Status
-----------|-------
-Easy Theme Switching (lualine/scheme) | In Progress
-Lualine colorscheme integration | Finished (for now anyway)
-Built-in Documentation | Not Finished
-Better install script | Planned
-LuaSnip Support | Planned
-Base16-like custom theme configuration | Planned
+Milestone | Status |
+----------|--------|
+Easy Theme Switching (lualine/scheme) | In Progress |
+Lualine colorscheme integration | Finished (for now anyway) |
+Built-in Documentation | Not Finished |
+Better install script | Planned |
+LuaSnip Support | Planned |
+Base16-like custom theme configuration | Planned |
