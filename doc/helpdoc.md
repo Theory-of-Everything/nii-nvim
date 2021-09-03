@@ -101,6 +101,25 @@ require('config.presence')
 ...
  ```
 
+### Changing Keybinds
+
+If you want to change or add custom keybinds for nvim, all keybinds are defined in the file `lua/keymap.lua`.
+
+To add a custom keybind, insert the following into `keymap.lua`
+(for example we will make a keybind that replaces all `"` with `'`)
+```lua
+...
+-- map() is a wrapper function for setting keybinds with nvim's lua api
+-- Arg1 specifies the mode of the keybind (similar to imap, nmap, etc.)
+-- Arg2 is the actual keybind
+-- Arg3 is the command to execute
+-- Arg4 is for aany extra options (noremap and silent are true by default)
+-- you can also pass in an empty table or the opt var if you don't want any options.
+
+map("n", "<leader>s", ":%s/"/'/g', opts)
+...
+```
+
 ### Changing the colorscheme
 
 By default, nii-nvim (should) be using the onedark colorscheme for both nvim and lualine, however, if you want to change the theme, you can do that pretty easily
