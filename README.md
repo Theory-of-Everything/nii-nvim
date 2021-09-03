@@ -93,11 +93,11 @@ Telescope.nvim
 
 ## Roadmap
 Currently there isn't much planned, however that are still some things I have in mind.
-Milestone | Status
-----------|-------
-Easy Theme Switching (lualine/scheme) | In Progress
-Lualine colorscheme integration | Finished (for now anyway)
-Built-in Documentation | Not Finished
-Better install script | Planned
-LuaSnip Support | Planned
-Base16-like custom theme configuration | Planned
+Milestone | Status |
+----------|--------|
+Easy Theme Switching (lualine/scheme) | In Progress |
+Lualine colorscheme integration | Finished (for now anyway) |
+Built-in Documentation | Not Finished |
+Better install script | Planned |
+LuaSnip Support | Planned |
+Base16-like custom theme configuration | Planned |
