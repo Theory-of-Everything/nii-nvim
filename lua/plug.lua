@@ -35,6 +35,8 @@ return require('packer').startup(function(use)
 	use 'sickill/vim-monokai'	-- monokai
 	use 'morhetz/gruvbox'		-- gruvbox
 	use 'shaunsingh/nord.nvim'	-- nord
+	use 'sainnhe/gruvbox-material'  -- gruvbox-material
+
 
 	-- neesh themes
 	use 'sainnhe/everforest'	-- everforest
