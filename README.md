@@ -99,7 +99,7 @@ Milestone | Status
 ----------|-------
 Easy Theme Switching (lualine/scheme) | In Progress
 Lualine colorscheme integration | Finished (for now anyway)
-Built-in Documentation | Not Finished
+Built-in Documentation | Finished (for most content as of #2)
 Better install script | Planned
 LuaSnip Support | Planned
 Base16-like custom theme configuration | Planned
