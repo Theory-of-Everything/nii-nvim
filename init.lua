@@ -17,12 +17,12 @@ vim.opt.termguicolors = true
 
 -- Load Themes
 -- load editor color theme
--- scheme.load_scheme('onedark')
+-- scheme.load_scheme('everforest')
 -- load statusline theme
--- scheme.load_lualine_scheme('onedark')
+-- scheme.load_lualine_scheme('everforest')
 -- if you don't  want to specify the theme for each component,
 -- you can use the following function
-scheme.load_shared_scheme('onedark')
+scheme.load_shared_scheme('everforest')
 
 -- load individual plugin configurations
 require('config.dashboard')
