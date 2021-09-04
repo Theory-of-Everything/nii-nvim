@@ -71,15 +71,16 @@ Comment | Comment a line with a keybind | [terrortylor/nvim-comment](https://git
 
 ### Themes
 nii-nvim comes pre-bundled with 7 themes.
+
 Theme | Repository | test
 ----- | ---------- | ----
-OneDark | [joshdick/onedark.vim](https://github.com/joshdick/onedark.vim) | test
-Monokai | [sickill/vim-monokai](https://github.com/sickill/vim-monokai) | test
-Gruvbox | [morhetz/gruvbox](https://github.com/morhetz/gruvbox) | test
-Nord | [shaunsingh/nord.nvim](https://github.com/shaunsingh/nord.nvim) | test
-Everforest | [sainnhe/everforest](https://github.com/sainnhe/everforest) | test
-Bluewery | [relastle/bluewery.vim](https://github.com/relastle/bluewery.vim) | test
-Night Owl | [haishanh/night-owl.vim](https://github.com/haishanh/night-owl.vim) | test
+OneDark | [joshdick/onedark.vim](https://github.com/joshdick/onedark.vim)
+Monokai | [sickill/vim-monokai](https://github.com/sickill/vim-monokai)
+Gruvbox | [morhetz/gruvbox](https://github.com/morhetz/gruvbox)
+Nord | [shaunsingh/nord.nvim](https://github.com/shaunsingh/nord.nvim)
+Everforest | [sainnhe/everforest](https://github.com/sainnhe/everforest)
+Bluewery | [relastle/bluewery.vim](https://github.com/relastle/bluewery.vim)
+Night Owl | [haishanh/night-owl.vim](https://github.com/haishanh/night-owl.vim)
 
 ## Screenshots
 Dashboard View (Onedark Theme)
@@ -93,11 +94,12 @@ Telescope.nvim
 
 ## Roadmap
 Currently there isn't much planned, however that are still some things I have in mind.
-Milestone | Status |
-----------|--------|
-Easy Theme Switching (lualine/scheme) | In Progress |
-Lualine colorscheme integration | Finished (for now anyway) |
-Built-in Documentation | Not Finished |
-Better install script | Planned |
-LuaSnip Support | Planned |
-Base16-like custom theme configuration | Planned |
+
+Milestone | Status 
+----------|-------
+Easy Theme Switching (lualine/scheme) | In Progress
+Lualine colorscheme integration | Finished (for now anyway)
+Built-in Documentation | Not Finished
+Better install script | Planned
+LuaSnip Support | Planned
+Base16-like custom theme configuration | Planned
