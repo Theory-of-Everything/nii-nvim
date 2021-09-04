@@ -72,7 +72,7 @@ Comment | Comment a line with a keybind | [terrortylor/nvim-comment](https://git
 ### Themes
 nii-nvim comes pre-bundled with 7 themes.
 Theme | Repository
-------|-----------
+----- | ----------
 OneDark | [joshdick/onedark.vim](https://github.com/joshdick/onedark.vim)
 Monokai | [sickill/vim-monokai](https://github.com/sickill/vim-monokai)
 Gruvbox | [morhetz/gruvbox](https://github.com/morhetz/gruvbox)
