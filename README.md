@@ -71,8 +71,9 @@ Comment | Comment a line with a keybind | [terrortylor/nvim-comment](https://git
 
 ### Themes
 nii-nvim comes pre-bundled with 7 themes.
-Theme | Repository
-------|-----------
+
+Theme | Repository | test
+----- | ---------- | ----
 OneDark | [joshdick/onedark.vim](https://github.com/joshdick/onedark.vim)
 Monokai | [sickill/vim-monokai](https://github.com/sickill/vim-monokai)
 Gruvbox | [morhetz/gruvbox](https://github.com/morhetz/gruvbox)
@@ -93,11 +94,12 @@ Telescope.nvim
 
 ## Roadmap
 Currently there isn't much planned, however that are still some things I have in mind.
-Milestone | Status |
-----------|--------|
-Easy Theme Switching (lualine/scheme) | In Progress |
-Lualine colorscheme integration | Finished (for now anyway) |
-Built-in Documentation | Not Finished |
-Better install script | Planned |
-LuaSnip Support | Planned |
-Base16-like custom theme configuration | Planned |
+
+Milestone | Status 
+----------|-------
+Easy Theme Switching (lualine/scheme) | In Progress
+Lualine colorscheme integration | Finished (for now anyway)
+Built-in Documentation | Finished (for most content as of #2)
+Better install script | Planned
+LuaSnip Support | Planned
+Base16-like custom theme configuration | Planned
