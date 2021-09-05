@@ -18,6 +18,9 @@
 <div align="center">
   
 [![Lua](https://img.shields.io/badge/Made%20With-Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white)]()
+[![Repo_Size](https://img.shields.io/github/languages/code-size/theory-of-everything/nii-nvim?color=orange&label=Repo%20Size&style=for-the-badge)]()
+[![Pull_Requests](https://img.shields.io/github/issues-pr/theory-of-everything/nii-nvim?style=for-the-badge)]()
+[![Issues](https://img.shields.io/github/issues/theory-of-everything/nii-nvim?color=red&style=for-the-badge)]()
   
 </div>
 
