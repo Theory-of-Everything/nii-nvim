@@ -53,38 +53,6 @@ Also the name is cute, and sounds small. 	(・3・)
 * Easily Extensible configuration
 * Swag 	(̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄
 
-## Plugins
-### LSP/Autocomplete
-Plugin Name | Function | Repository
-------------|----------|-----------
-LspConfig | Provides lsp integration and basic linting | [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
-LspInstall | Easily installs various lsp servers | [kabouzeid/nvim-lspinstall](https://github.com/kabouzeid/nvim-lspinstall)
-Nvim Compe | Provies autocomplete and suggestions | [hrsh7th/nvim-compe](https://github.com/hrsh7th/nvim-compe)
-Lspkind | Makes compe's suggestions look nicer | [onsails/lspkind-nvim](https://github.com/onsails/lspkind-nvim)
-
-### Utilities
-Plugin Name | Function | Repository
-------------|----------|-----------
-Autopairs | Parenthsis and quote pairs | [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)
-Lualine | A lightweight and Fast statusline | [hoob3rt/lualine.nvim](https://githu.com/hoob3rt/lualine.nvim)
-Bufferline | A Clean bufferline for neovim | [akinsho/nvim-bufferline.lua](https://github.com/akinsho/nvim-bufferline.lua)
-Telescope | Search for anything from files to buffers | [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
-Nvim Tree | A sidebar file tree for neovim | [kyazdani42/nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
-Comment | Comment a line with a keybind | [terrortylor/nvim-comment](https://github.com/terrortylor/nvim-comment)
-
-### Themes
-nii-nvim comes pre-bundled with 7 themes.
-
-Theme | Repository | test
------ | ---------- | ----
-OneDark | [joshdick/onedark.vim](https://github.com/joshdick/onedark.vim)
-Monokai | [sickill/vim-monokai](https://github.com/sickill/vim-monokai)
-Gruvbox | [morhetz/gruvbox](https://github.com/morhetz/gruvbox)
-Nord | [shaunsingh/nord.nvim](https://github.com/shaunsingh/nord.nvim)
-Everforest | [sainnhe/everforest](https://github.com/sainnhe/everforest)
-Bluewery | [relastle/bluewery.vim](https://github.com/relastle/bluewery.vim)
-Night Owl | [haishanh/night-owl.vim](https://github.com/haishanh/night-owl.vim)
-
 ## Screenshots
 Dashboard View (Onedark Theme)
 ![Dashboard](https://github.com/Theory-of-Everything/imagehost/blob/main/nii-nvim/old/scrot_old.png?raw=true)
