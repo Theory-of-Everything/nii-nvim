@@ -1,5 +1,3 @@
-local scheme = require('scheme')
-
 -- load keybindings and editor options
 require('keymap')
 require('options')
@@ -10,14 +8,8 @@ require('plug')
 -- enable true color
 vim.opt.termguicolors = true
 
--- Load Themes
--- load editor color theme
--- scheme.load_scheme('everforest')
--- load statusline theme
--- scheme.load_lualine_scheme('everforest')
--- if you don't  want to specify the theme for each component,
--- you can use the following function
-scheme.load_shared_scheme('everforest')
+-- load theme system
+require('config.themes')
 
 -- load individual plugin configurations
 require('config.dashboard')
