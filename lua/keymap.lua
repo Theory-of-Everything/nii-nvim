@@ -1,4 +1,3 @@
-local cmd = vim.cmd
 local function map (mode, bind, exec, opts)
 	local options = {noremap = true, silent = true}
 	if opts then
@@ -17,41 +16,33 @@ local opt = {}  --empty opt for maps with no extra options
 --		The Fourth is other extra options
 --
 --	Example:  (toggles line numbers)
---		map("n", "<C-n>", ":set rnu!<Cr>", opt)
+--		map("n", "<C-n>", ":set rnu!<CR>", opt)
 
---map leader
-cmd('let mapleader=" "')
-
--- toggle line numbers
-map("n", "<C-n>", ":set rnu!<CR>", opt)
-
--- copy full file content
-map("n", "<leader>ya", ":%y+<CR>", opt)
-
--- comment line
-map("", "<C-c>", ":CommentToggle<Cr>", opt)
-
--- nvim-tree binds
-map("", "<C-t>", ":NvimTreeToggle<Cr>", opt)
+vim.g.mapleader = " "                             -- Map leader key to space
+map("n", "<C-n>", ":set rnu!<CR>", opt)           -- toggle relative line numbers
+map("n", "<C-a>", ":%y+<CR>", opt)                -- Copy content of entire buffer to system clipboard
+map("",  "<C-c>", ":CommentToggle<CR>", opt)      -- toggle comment on current line or selection
+map("",  "<C-t>", ":NvimTreeToggle<CR>", opt)     -- toggle nvimtree
+map("n", "<leader>nf", ":Neoformat<CR>", {noremap = true})    -- format current buffer with neoformat
 
 -- compe keybinds
--- map("i", "<Tab>", "v:lua.tab_complete()", {expr = true})
--- map("s", "<Tab>", "v:lua.tab_complete()", {expr = true})
--- map("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
--- map("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
+map("i", "<Tab>", "v:lua.tab_complete()", {expr = true})
+map("s", "<Tab>", "v:lua.tab_complete()", {expr = true})
+map("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
+map("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
 
 -- dashbaord commands
 map("n", "<leader>~", ":Dashboard<CR>", opt)
 
 -- buffer management
-map("n", "<leader>h", ":bf<CR>", opt)
-map("n", "<leader>k", ":bn<CR>", opt)
-map("n", "<leader>j", ":bp<CR>", opt)
-map("n", "<leader>l", ":bl<CR>", opt)
-map("n", "<leader>d", ":bd<CR>", opt)
+map("n", "<leader>bh", ":bf<CR>", {noremap = true})
+map("n", "<leader>bk", ":bn<CR>", {noremap = true})
+map("n", "<leader>bj", ":bp<CR>", {noremap = true})
+map("n", "<leader>bl", ":bl<CR>", {noremap = true})
+map("n", "<leader>bd", ":bd<CR>", {noremap = true})
 
 -- telescope pullup
-map("n", "<leader>f", ":Telescope find_files<CR>", opt)
-map("n", "<leader>F", ":Telescope file_browser<CR>", opt)
-map("n", "<leader>g", ":Telescope git_commits<CR>", opt)
-map("n", "<leader>G", ":Telescope git_branches<CR>", opt)
+map("n", "<leader>ff", ":Telescope find_files<CR>",   {noremap = true})
+map("n", "<leader>fF", ":Telescope file_browser<CR>", {noremap = true})
+map("n", "<leader>fg", ":Telescope git_commits<CR>",  {noremap = true})
+map("n", "<leader>fG", ":Telescope git_branches<CR>", {noremap = true})
