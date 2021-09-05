@@ -26,7 +26,7 @@ cmd('let mapleader=" "')
 map("n", "<C-n>", ":set rnu!<CR>", opt)
 
 -- copy full file content
-map("n", "<C-a>", ":%y+<CR>", opt)
+map("n", "<leader>ya", ":%y+<CR>", opt)
 
 -- comment line
 map("", "<C-c>", ":CommentToggle<Cr>", opt)
