@@ -1,9 +1,4 @@
 local scheme = require('scheme')
-local cmd = vim.cmd
-
--- base command settings
-cmd('set mouse=a')
-cmd('syntax on')
 
 -- load keybindings and editor options
 require('keymap')

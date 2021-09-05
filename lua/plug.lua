@@ -4,10 +4,10 @@ return require('packer').startup(function(use)
 
 	-- lsp realted plugins
 	-- includes autocomplete and lsp suggestions
-	use 'neovim/nvim-lspconfig'		-- nvim lsp implementaion plugin
+	use 'neovim/nvim-lspconfig'		    -- nvim lsp implementaion plugin
 	use 'kabouzeid/nvim-lspinstall'		-- utility for installing lsp servers
-	use 'hrsh7th/nvim-compe'		-- autocompletion support
-	use 'onsails/lspkind-nvim'		-- lsp gui suggestions
+	use 'hrsh7th/nvim-compe'		    -- autocompletion support
+	use 'onsails/lspkind-nvim'		    -- lsp gui suggestions
 
 	-- utility plugins
 	-- these plugins are all realted to editor configs
@@ -21,7 +21,7 @@ return require('packer').startup(function(use)
 	use 'sbdchd/neoformat'
 
 	-- cosmetic addition plugins
-	-- these add in a bit more bling and flair to nvi
+	-- these add in a bit more bling and flair to nvim
     	use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 	use 'glepnir/dashboard-nvim'
 	use 'norcalli/nvim-colorizer.lua'
@@ -31,15 +31,15 @@ return require('packer').startup(function(use)
 
 	-- themes
 	-- popular themes incoming
-	use 'joshdick/onedark.vim'	-- onedark
-	use 'sickill/vim-monokai'	-- monokai
-	use 'morhetz/gruvbox'		-- gruvbox
-	use 'shaunsingh/nord.nvim'	-- nord
+	use 'joshdick/onedark.vim'	    -- onedark
+	use 'sickill/vim-monokai'	    -- monokai
+	use 'morhetz/gruvbox'		    -- gruvbox
+	use 'shaunsingh/nord.nvim'	    -- nord
 	use 'sainnhe/gruvbox-material'  -- gruvbox-material
 
 
 	-- neesh themes
-	use 'sainnhe/everforest'	-- everforest
-	use 'relastle/bluewery.vim'	-- bluewery
+	use 'sainnhe/everforest'	    -- everforest
+	use 'relastle/bluewery.vim'	    -- bluewery
 	use 'haishanh/night-owl.vim'	-- Night Owl
 end)
