@@ -16,7 +16,7 @@ local colors = {
 --LuaFormatter on
 return {
   normal = {
-    a = {bg = colors.gray, fg = colors.black, gui = 'bold'},
+    a = {bg = colors.white, fg = colors.black, gui = 'bold'},
     b = {bg = colors.lightgray, fg = colors.white},
     c = {bg = colors.darkgray, fg = colors.white},
   },

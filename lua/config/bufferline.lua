@@ -1,11 +1,11 @@
-require('bufferline').setup{
+require("bufferline").setup({
 	options = {
-		indicator_icon = '▎',
-		buffer_close_icon = '',
-		modified_icon = '●',
-		close_icon = '',
-		left_trunc_marker = '',
-		right_trunc_marker = '',
+		indicator_icon = "▎",
+		buffer_close_icon = "",
+		modified_icon = "●",
+		close_icon = "",
+		left_trunc_marker = "",
+		right_trunc_marker = "",
 		numbers = "none",
 		-- mappings = true,
 		close_command = "bdelete! %d",
@@ -16,7 +16,7 @@ require('bufferline').setup{
 		seperator_style = "padded_slant",
 		diagnostics = "nvim_lsp",
 		diagnostics_indicator = function(count, level, diagnostics_dict, context)
-			return "("..count..")"
+			return "(" .. count .. ")"
 		end,
-	}
-}
+	},
+})

@@ -3,9 +3,14 @@ local opt = vim.opt
 local g = vim.g
 local o = vim.o
 
-cmd('syntax enable')
-cmd('set nu')
-cmd('set mouse=a')
+cmd('syntax enable')    -- syntax highlighting
+o.nu = true             -- line numbers
+o.mouse = "a"           -- mouse controls
+
+-- Tab settings
+o.tabstop = 4
+o.shiftwidth = 4
+o.expandtab = true
 
 opt.undofile = true
 opt.ruler = false
