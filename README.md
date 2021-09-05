@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Fetch](img/scrot-fetch.png)
+![Fetch](https://github.com/Theory-of-Everything/imagehost/blob/main/nii-nvim/scrot_logo.png?raw=true)
 
 </div>
 
@@ -87,13 +87,13 @@ Night Owl | [haishanh/night-owl.vim](https://github.com/haishanh/night-owl.vim)
 
 ## Screenshots
 Dashboard View (Onedark Theme)
-![Dashboard](img/scrot-1.png)
+![Dashboard](https://github.com/Theory-of-Everything/imagehost/blob/main/nii-nvim/old/scrot_old.png?raw=true)
 General Interface
-![Code](img/scrot-code.png)
+![Code](https://github.com/Theory-of-Everything/imagehost/blob/main/nii-nvim/old/scrot_old3.png?raw=true)
 Lspkind Suggestions
-![Lspkind](img/scrot-lspkind.png)
+![Lspkind](https://github.com/Theory-of-Everything/imagehost/blob/main/nii-nvim/old/scrot_old2.png?raw=true)
 Telescope.nvim
-![Telescope](img/scrot-telescope.png)
+![Telescope](https://github.com/Theory-of-Everything/imagehost/blob/main/nii-nvim/old/scrot_old1.png?raw=true)
 
 ## Roadmap
 Currently there isn't much planned, however that are still some things I have in mind.
