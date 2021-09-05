@@ -20,7 +20,7 @@ local opt = {}  --empty opt for maps with no extra options
 
 vim.g.mapleader = " "                             -- Map leader key to space
 map("n", "<C-n>", ":set rnu!<CR>", opt)           -- toggle relative line numbers
-map("n", "<C-a>", ":%y+<CR>", opt)                -- Copy content of entire buffer to system clipboard
+map("n", "<leader>ya", ":%y+<CR>", opt)                -- Copy content of entire buffer to system clipboard
 map("",  "<C-c>", ":CommentToggle<CR>", opt)      -- toggle comment on current line or selection
 map("",  "<C-t>", ":NvimTreeToggle<CR>", opt)     -- toggle nvimtree
 map("n", "<leader>nf", ":Neoformat<CR>", {noremap = true})    -- format current buffer with neoformat
