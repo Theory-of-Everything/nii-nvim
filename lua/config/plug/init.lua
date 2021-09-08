@@ -4,6 +4,7 @@ return {
 	require("config.plug.compe"),
 	require("config.plug.lualine"),
 	require("config.plug.lspkind"),
+	require("config.plug.luasnip"),
 	require("config.plug.nvimtree"),
 	require("config.plug.gitsigns"),
 	require("config.plug.dashboard"),
