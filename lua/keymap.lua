@@ -30,6 +30,8 @@ map("i", "<Tab>", "v:lua.tab_complete()", {expr = true})
 map("s", "<Tab>", "v:lua.tab_complete()", {expr = true})
 map("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
 map("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
+map("i", "<C-E>", "<Plug>luasnip-next-choice", {})
+map("s", "<C-E>", "<Plug>luasnip-next-choice", {})
 
 -- dashbaord commands
 map("n", "<leader>~", ":Dashboard<CR>", opt)

@@ -1,5 +1,6 @@
 return {
 	require("config.plug.lsp"),
+	require("config.plug.hop"),
 	require("config.plug.compe"),
 	require("config.plug.lualine"),
 	require("config.plug.lspkind"),
