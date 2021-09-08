@@ -1,4 +1,4 @@
-local scheme = require("scheme")
+local scheme = require("lib.scheme")
 
 local lualine_theme = require("themes.lualine." .. scheme.scheme)
 require("lualine").setup({
