@@ -20,7 +20,7 @@ return require('packer').startup(function(use)
 	use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
 	use 'terrortylor/nvim-comment'
 	use 'sbdchd/neoformat'
-    use 'phaazon/hop'
+    use 'phaazon/hop.nvim'
 
 	-- cosmetic addition plugins
 	-- these add in a bit more bling and flair to nvim
