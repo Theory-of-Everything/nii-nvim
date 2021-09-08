@@ -10,5 +10,6 @@ return {
 	require("config.plug.autopairs"),
 	require("config.plug.bufferline"),
 	require("config.plug.nvim-comment"),
+	require("config.plug.nvim-colorizer"),
 	require("config.plug.nvim-treesitter"),
 }

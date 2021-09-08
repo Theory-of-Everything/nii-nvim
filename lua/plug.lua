@@ -8,6 +8,7 @@ return require('packer').startup(function(use)
 	use 'kabouzeid/nvim-lspinstall'		-- utility for installing lsp servers
 	use 'hrsh7th/nvim-compe'		    -- autocompletion support
 	use 'onsails/lspkind-nvim'		    -- lsp gui suggestions
+    use 'L3MON4D3/luasnip'              -- Snippet Engine
 
 	-- utility plugins
 	-- these plugins are all realted to editor configs
@@ -19,6 +20,7 @@ return require('packer').startup(function(use)
 	use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
 	use 'terrortylor/nvim-comment'
 	use 'sbdchd/neoformat'
+    use 'phaazon/hop'
 
 	-- cosmetic addition plugins
 	-- these add in a bit more bling and flair to nvim
