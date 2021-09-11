@@ -1,6 +1,13 @@
 local scheme = require("lib.scheme")
 
-local lualine_theme = require("themes.lualine." .. scheme.scheme)
+local lualine_theme = nil
+
+if scheme.is_lualine_default == false then
+	lualine_theme = require("themes.lualine." .. scheme.scheme)
+else
+    lualine_theme = scheme.scheme
+end
+
 require("lualine").setup({
 	options = {
 		section_separators = { "", "" },
