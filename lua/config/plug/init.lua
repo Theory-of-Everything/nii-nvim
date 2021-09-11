@@ -9,6 +9,7 @@ return {
 	require("config.plug.gitsigns"),
 	require("config.plug.dashboard"),
 	require("config.plug.autopairs"),
+	require("config.plug.telescope"),
 	require("config.plug.bufferline"),
 	require("config.plug.nvim-comment"),
 	require("config.plug.nvim-colorizer"),
