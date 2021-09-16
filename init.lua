@@ -1,11 +1,9 @@
+-- load theme loading library
 local scheme = require('lib.scheme')
 
 -- load keybindings and editor options
 require('keymap')
 require('options')
-
--- load all of the packer plugins stuff
-require('plug')
 
 -- Load Themes
 -- load editor color theme
@@ -17,5 +15,7 @@ require('plug')
 scheme.load_shared_scheme('everforest')
 
 -- load configurations
+-- config.plug loads plugin configurations
+-- config.module loads user contrib files (work in progress)
 require('config.plug')
 require('config.modules')
