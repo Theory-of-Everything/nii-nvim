@@ -55,6 +55,11 @@ Also the name is cute, and sounds small. 	(・3・)
 
 ## Screenshots
 ### Functionality Showcase
+| | |
+|-|-|
+| <div align="center"> LSP and Autocompletion ![lsp](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/feat_completion.png) </div>  | <div align="center"> Hop Motions </div> ![hop](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/feat_hop.png) |
+| <div align="center"> Nvimtree sidebar </div> ![tree](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/feat_tree.png)| <div align="center"> Built-in Docs </div> ![docs](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/helpdoc.png)|
+| <div align="center"> Telescope Fuzzy File Find </div> ![file_find](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/telescope_0.png) | <div align="center"> Telescope Git Branch View/Switcher </div>![git](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/telescope_1.png) |
 
 ### Theme Showcase
 | | |
