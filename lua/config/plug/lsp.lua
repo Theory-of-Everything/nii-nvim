@@ -64,10 +64,10 @@ local lua_settings = {
 			path = vim.split(package.path, ";"),
 		},
 		diagnostics = {
-            enable = false,
+			enable = false,
 			-- Get the language server to recognize the `vim` global
 			globals = { "vim" },
-            disable = { "lowercase-global" }
+			disable = { "lowercase-global" },
 		},
 		workspace = {
 			-- Make the server aware of Neovim runtime files
@@ -76,9 +76,9 @@ local lua_settings = {
 				[vim.fn.expand("$VIMRUNTIME/lua/vim/lsp")] = true,
 			},
 		},
-        completion = {
-            keywordSnippet = "Disable",
-        },
+		completion = {
+			keywordSnippet = "Disable",
+		},
 	},
 }
 
