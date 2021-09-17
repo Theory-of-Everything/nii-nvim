@@ -1,7 +1,7 @@
 <h1 align="center"> nii-nvim:<br><i>a no-nonsense neovim configuration</i></h1>
 <div align="center">
 
-![Fetch](https://github.com/Theory-of-Everything/imagehost/blob/main/nii-nvim/scrot_logo.png?raw=true)
+ <img src="https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_logo_1.png" alt="img" width="525px">
 
 </div>
 
@@ -23,7 +23,7 @@
   
 </div>
 
-nii-nvim is a very minimal nvim dotfiles focused on creating a functional editor with a minmal amount of plugins. nii-nvim also has the user in mind by being very extensible and documented.
+nii-nvim is a very minimal neovim configuration focused on creating a functional editor with a minimal amount code. nii-nvim also has the user in mind by being very extensible and documented.
 #### **NOTE**: nii-nvim is currently under development, meaning that many things may not work as intended, or may not be implemented at all.
 
 ## Why nii-nvim?
