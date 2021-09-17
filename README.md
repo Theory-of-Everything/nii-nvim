@@ -24,52 +24,43 @@
   
 </div>
 
-# PLEASE DONT SKIP THE README!!!
 nii-nvim is a very minimal nvim dotfiles focused on creating a functional editor with a minmal amount of plugins. nii-nvim also has the user in mind by being very extensible and documented.
 #### **NOTE**: nii-nvim is currently under development, meaning that many things may not work as intended, or may not be implemented at all.
 
 ## Why nii-nvim?
-Many of the neovim configurations that exist (i.e. NvChad, Spacevim, etc.) are either heavily bloated, difficult to extend, or tailored to a specific task/workflows. nii-nvim aims to solve this by providing the end user with a base configuration that contains everything needed for a very basic editor with all of the base components in place, so that the end user can create there own workflow from that base. nii-nvim contains a bunch of features including lsp integration, snippets (planned), autocomplete, and themes.
+There are many neovim configurations that exist (i.e. NvChad, Lunar Vim, etc.), however, amny of these configurations suffer from a host of problems.
+ - Some confugurations like NvChad, have very abstracted and complex codebases.
+ - Others rely on having as much overall functionality as possible, like LunarVim.
 
+While none of this is in its own right is bad, there are some problems that arise from these choices:
+ - Complex codbases lead to less freedom for end-user extensiblity and configuration
+ - Users may not use half of what is made avalible to them simply because they don't need all of that functionality
+
+ nii-nvim provides a solution to these problems by providing only the bare minimum of necissary code in order to make a functioning configuration.
 The end goal of nii-nvim is to be use as a base config for users to extend and add upon, leading to a more unique editing experience.
 Also the name is cute, and sounds small. 	(・3・)
 
 ## Requirements
-* `neovim 5.0 or greater`
-* `fzf`
-* `git`
-* `A Nerd Font` for tree and tab icon support
+- neovim 5.0 or greater
+- fzf
+- git
+- A Nerd Font
 
 ## Features
-* Fully documented config, designed to be understandable by both inexperienced and experienced (Work in progress)
-* Sane Defaults for ease of mind ᕕ( ᐛ )ᕗ
-* Popular coloschemes pre-packaged with lualine integration including:
-  * One Dark
-  * Nord
-  * Gruvbox
-  * Monokai
-  * and a few others!!
-* Easily Extensible configuration
-* Swag 	(̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄
+- Heavy focus on both in-source documentation and external documentation.
+- Sane Keybinds for extra added functionality
+- Small codebase for easy extensibility
+- A handful of plugins to build off neovim's strengths
+- Swag 	(̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄
 
 ## Screenshots
-Dashboard View (Onedark Theme)
-![Dashboard](https://github.com/Theory-of-Everything/imagehost/blob/main/nii-nvim/old/scrot_old.png?raw=true)
-General Interface
-![Code](https://github.com/Theory-of-Everything/imagehost/blob/main/nii-nvim/old/scrot_old3.png?raw=true)
-Lspkind Suggestions
-![Lspkind](https://github.com/Theory-of-Everything/imagehost/blob/main/nii-nvim/old/scrot_old2.png?raw=true)
-Telescope.nvim
-![Telescope](https://github.com/Theory-of-Everything/imagehost/blob/main/nii-nvim/old/scrot_old1.png?raw=true)
+### Functionality Showcase
+
+### Theme Showcase
+| | |
+|-|-|
+| [![Everforest]](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_everforest.png) |[![Bluewery]](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_bluewery.png) |
+| [![Gruvbox-material]](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_gruvboxmaterial.png) |[![Nord]](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_nord.png) |
 
 ## Roadmap
-Currently there isn't much planned, however that are still some things I have in mind.
-
-Milestone | Status 
-----------|-------
-Easy Theme Switching (lualine/scheme) | In Progress
-Lualine colorscheme integration | Finished (for now anyway)
-Built-in Documentation | Finished (for most content as of #2)
-Better install script | Planned
-LuaSnip Support | Planned
-Base16-like custom theme configuration | Planned
+Check out the Projects tab for the current roadmap
