@@ -28,16 +28,17 @@ nii-nvim is a very minimal nvim dotfiles focused on creating a functional editor
 
 ## Why nii-nvim?
 There are many neovim configurations that exist (i.e. NvChad, Lunar Vim, etc.), however, amny of these configurations suffer from a host of problems.
- - Some confugurations like NvChad, have very abstracted and complex codebases.
- - Others rely on having as much overall functionality as possible, like LunarVim.
+ - Some configurations (like NvChad), have very abstracted and complex codebases.
+ - Others rely on having as much overall functionality as possible (like LunarVim).
 
-While none of this is in its own right is bad, there are some problems that arise from these choices:
- - Complex codbases lead to less freedom for end-user extensiblity and configuration
- - Users may not use half of what is made avalible to them simply because they don't need all of that functionality
+While none of this is bad, there are some problems that can arise from these choices:
+ - Complex codebases lead to less freedom for end-user extensiblity and configuration, as there is more reliance on teh maintainer of said code.
+ - Users may not use half of what is made avalible to them simply because they don't need all of that functionality, so all of it may not be necissary
 
- nii-nvim provides a solution to these problems by providing only the bare minimum of necissary code in order to make a functioning configuration.
+nii-nvim provides a solution to these problems by providing only the bare minimum of necissary code in order to make a functioning configuration.
 The end goal of nii-nvim is to be use as a base config for users to extend and add upon, leading to a more unique editing experience.
-Also the name is cute, and sounds small. 	(・3・)
+
+Also the name is cute. 	(・3・)
 
 ## Requirements
 - neovim 5.0 or greater
@@ -50,7 +51,7 @@ Also the name is cute, and sounds small. 	(・3・)
 - Sane Keybinds for extra added functionality
 - Small codebase for easy extensibility
 - A handful of plugins to build off neovim's strengths
-- Swag 	(̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄
+- Swag (and Minimalisim!!)
 
 # Screenshots
 ## Functionality Showcase
