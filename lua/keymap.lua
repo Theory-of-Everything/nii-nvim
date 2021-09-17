@@ -8,7 +8,8 @@ end
 
 local opt = {}  --empty opt for maps with no extra options
 
---[[ MAPPING:
+--[[ 
+    MAPPING:
 	map takes 4 args:
 		The first is the type, whether in all, normal, insert etc. (reference: https://github.com/nanotee/nvim-lua-guide#defining-mappings)
 		The Second Arg is the keybind. Just like normal vim way
