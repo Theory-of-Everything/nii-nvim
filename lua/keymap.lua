@@ -52,5 +52,5 @@ map("n", "<leader>fg", ":Telescope git_commits<CR>",  {noremap = true})
 map("n", "<leader>fG", ":Telescope git_branches<CR>", {noremap = true})
 
 -- hop.nvim
-map("n", "<leader>hh", ":HopWord<CR>", opt)
-map("n", "<leader>hH", ":HopLine<CR>", opt)
+map("n", "<leader>hH", ":HopWord<CR>", opt)
+map("n", "<leader>hh", ":HopLine<CR>", opt)

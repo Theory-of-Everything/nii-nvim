@@ -114,9 +114,9 @@ end
 -- used in config/plus/lualine.lua
 function M.set_lualine_seperator(choice)
 	if type(choice) == "table" then
-		M.lualine_style = { choice[1], choice[2] }
+		M.lualine_seperator = { choice[1], choice[2] }
 	else
-		M.lualine_style = { "", "" }
+		M.lualine_seperator = { "", "" }
 	end
 end
 
