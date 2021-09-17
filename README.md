@@ -57,10 +57,10 @@ Also the name is cute, and sounds small. 	(・3・)
 ### Functionality Showcase
 
 ### Theme Showcase
-| | |
+
 |-|-|
-| ![Everforest](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_everforest.png) |![Bluewery](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_bluewery.png) |
-| ![Gruvbox-material](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_gruvboxmaterial.png) |![Nord](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_nord.png) |
+| <div align="center"> Everforest </div> ![Everforest](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_everforest.png) | <div align="center"> Bluewery </div>![Bluewery](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_bluewery.png) |
+| <div align="center"> Gruvbox-Material </div> ![Gruvbox-material](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_gruvboxmaterial.png) | <div align="center"> Nord </div> ![Nord](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_nord.png) |
 
 ## Roadmap
 Check out the Projects tab for the current roadmap
