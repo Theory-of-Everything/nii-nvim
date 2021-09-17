@@ -1,7 +1,9 @@
+-- load scheme wrapper library
 local scheme = require("lib.scheme")
 
 -- current set lualine theme
 local lualine_theme = nil
+local lualine_style = nil
 
 -- if a scheme is not bundled with lualine, look for a theme file
 if scheme.is_lualine_default == false then
@@ -13,8 +15,9 @@ end
 -- lualine setup config
 require("lualine").setup({
 	options = {
-		section_separators = { "", "" },
-		component_separators = { "", "" },
+		-- section_separators = { "", "" },
+		section_separators = scheme.lualine_style,
+		component_separators = scheme.lualine_style,
 		theme = lualine_theme,
 	},
 	sections = {
