@@ -5,11 +5,13 @@ local scheme = require('lib.scheme')
 require('keymap')
 require('options')
 
--- Load Themes
+-- Load Themes (loads everforest theme by default)
 -- load editor color theme
 -- scheme.load_scheme('everforest')
+
 -- load statusline theme
 -- scheme.load_lualine_scheme('everforest')
+
 -- if you don't  want to specify the theme for each component,
 -- you can use the following function
 scheme.load_shared_scheme('everforest')
