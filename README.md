@@ -12,7 +12,7 @@
   <span> • </span>
   <a href="https://github.com/Theory-of-Everything/nii-nvim/blob/master/CONTRIBUTING.md">Contribute</a>
  <span> • </span>
-  <a href="https://github.com/Theory-of-Everything/nii-nvim/">CSupport</a>
+  <a href="https://github.com/Theory-of-Everything/nii-nvim/blob/master/README.md#supportcommunity">Support</a>
   <p></p>
 </div>
 
