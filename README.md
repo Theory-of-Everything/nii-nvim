@@ -53,19 +53,19 @@ Also the name is cute, and sounds small. 	(・3・)
 - A handful of plugins to build off neovim's strengths
 - Swag 	(̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄
 
-## Screenshots
-### Functionality Showcase
+# Screenshots
+## Functionality Showcase
 | | |
 |-|-|
 | <div align="center"> LSP and Autocompletion ![lsp](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/feat_completion.png) </div>  | <div align="center"> Hop Motions </div> ![hop](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/feat_hop.png) |
 | <div align="center"> Nvimtree sidebar </div> ![tree](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/feat_tree.png)| <div align="center"> Built-in Docs </div> ![docs](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/helpdoc.png)|
 | <div align="center"> Telescope Fuzzy File Find </div> ![file_find](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/telescope_0.png) | <div align="center"> Telescope Git Branch View/Switcher </div>![git](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/telescope_1.png) |
 
-### Theme Showcase
+## Theme Showcase
 | | |
 |-|-|
 | <div align="center"> Everforest </div> ![Everforest](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_everforest.png) | <div align="center"> Bluewery </div>![Bluewery](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_bluewery.png) |
 | <div align="center"> Gruvbox-Material </div> ![Gruvbox-material](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_gruvboxmaterial.png) | <div align="center"> Nord </div> ![Nord](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_nord.png) |
 
-## Roadmap
+# Roadmap
 Check out the Projects tab for the current roadmap
