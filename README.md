@@ -11,6 +11,8 @@
   <a href="https://github.com/Theory-of-Everything/nii-nvim/wiki/Installation">Install</a>
   <span> • </span>
   <a href="https://github.com/Theory-of-Everything/nii-nvim/blob/master/CONTRIBUTING.md">Contribute</a>
+ <span> • </span>
+  <a href="https://github.com/Theory-of-Everything/nii-nvim/">CSupport</a>
   <p></p>
 </div>
 
@@ -53,6 +55,11 @@ Also the name is cute. 	(・3・)
 - A handful of plugins to build off neovim's strengths
 - Swag (and Minimalisim!!)
 
+## Support/Community
+If you are looking for help, or a relooking for others to interact with, you can join the "official" matrix room and discord server
+ - Matrix Room: [#nii-nvim:halogen.city](https://matrix.to/#/#nii-nvim:halogen.city)
+ - Discord Server: [Invite Link](https://discord.gg/H6WY7cUkfw)
+
 # Screenshots
 ## Functionality Showcase
 | | |
@@ -66,6 +73,3 @@ Also the name is cute. 	(・3・)
 |-|-|
 | <div align="center"> Everforest </div> ![Everforest](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_everforest.png) | <div align="center"> Bluewery </div>![Bluewery](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_bluewery.png) |
 | <div align="center"> Gruvbox-Material </div> ![Gruvbox-material](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_gruvboxmaterial.png) | <div align="center"> Nord </div> ![Nord](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_nord.png) |
-
-# Roadmap
-Check out the Projects tab for the current roadmap
