@@ -1,5 +1,4 @@
-<h1 align="center">nii-nvim: a no-nonsense neovim configuration</h1>
-
+<h1 align="center"> nii-nvim:<br><i>a no-nonsense neovim configuration</i></h1>
 <div align="center">
 
 ![Fetch](https://github.com/Theory-of-Everything/imagehost/blob/main/nii-nvim/scrot_logo.png?raw=true)
