@@ -1,3 +1,7 @@
+--[[
+This init file loads all of the plugin configuration files
+--]]
+
 return {
 	require("config.plug.lsp"),
 	require("config.plug.hop"),
@@ -9,6 +13,7 @@ return {
 	require("config.plug.gitsigns"),
 	require("config.plug.dashboard"),
 	require("config.plug.autopairs"),
+	require("config.plug.telescope"),
 	require("config.plug.bufferline"),
 	require("config.plug.nvim-comment"),
 	require("config.plug.nvim-colorizer"),

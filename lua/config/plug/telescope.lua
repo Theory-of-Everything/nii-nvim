@@ -1,4 +1,10 @@
 require("telescope").setup({
+	defaults = {
+		prompt_prefix = "=> ",
+		selection_caret = "=> ",
+		entry_prefix = "   ",
+		borderchars = { "═", "│", "═", "│", "╒", "╕", "╛", "╘" },
+	},
 	extensions = {
 		fzf = {
 			fuzzy = true,
