@@ -1,8 +1,7 @@
-<h1 align="center">nii-nvim: a no-nonsense neovim configuration</h1>
-
+<h1 align="center"> nii-nvim:<br><i>a no-nonsense neovim configuration</i></h1>
 <div align="center">
 
-![Fetch](https://github.com/Theory-of-Everything/imagehost/blob/main/nii-nvim/scrot_logo.png?raw=true)
+ <img src="https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_logo_1.png" alt="img" width="525px">
 
 </div>
 
@@ -12,6 +11,8 @@
   <a href="https://github.com/Theory-of-Everything/nii-nvim/wiki/Installation">Install</a>
   <span> • </span>
   <a href="https://github.com/Theory-of-Everything/nii-nvim/blob/master/CONTRIBUTING.md">Contribute</a>
+ <span> • </span>
+  <a href="https://github.com/Theory-of-Everything/nii-nvim/blob/master/README.md#supportcommunity">Support</a>
   <p></p>
 </div>
 
@@ -24,52 +25,51 @@
   
 </div>
 
-# PLEASE DONT SKIP THE README!!!
-nii-nvim is a very minimal nvim dotfiles focused on creating a functional editor with a minmal amount of plugins. nii-nvim also has the user in mind by being very extensible and documented.
+nii-nvim is a very minimal neovim configuration focused on creating a functional editor with a minimal amount code. nii-nvim also has the user in mind by being very extensible and documented.
 #### **NOTE**: nii-nvim is currently under development, meaning that many things may not work as intended, or may not be implemented at all.
 
 ## Why nii-nvim?
-Many of the neovim configurations that exist (i.e. NvChad, Spacevim, etc.) are either heavily bloated, difficult to extend, or tailored to a specific task/workflows. nii-nvim aims to solve this by providing the end user with a base configuration that contains everything needed for a very basic editor with all of the base components in place, so that the end user can create there own workflow from that base. nii-nvim contains a bunch of features including lsp integration, snippets (planned), autocomplete, and themes.
+There are many neovim configurations that exist (i.e. NvChad, Lunar Vim, etc.), however, amny of these configurations suffer from a host of problems.
+ - Some configurations (like NvChad), have very abstracted and complex codebases.
+ - Others rely on having as much overall functionality as possible (like LunarVim).
 
+While none of this is bad, there are some problems that can arise from these choices:
+ - Complex codebases lead to less freedom for end-user extensiblity and configuration, as there is more reliance on teh maintainer of said code.
+ - Users may not use half of what is made avalible to them simply because they don't need all of that functionality, so all of it may not be necissary
+
+nii-nvim provides a solution to these problems by providing only the bare minimum of necissary code in order to make a functioning configuration.
 The end goal of nii-nvim is to be use as a base config for users to extend and add upon, leading to a more unique editing experience.
-Also the name is cute, and sounds small. 	(・3・)
+
+Also the name is cute. 	(・3・)
 
 ## Requirements
-* `neovim 5.0 or greater`
-* `fzf`
-* `git`
-* `A Nerd Font` for tree and tab icon support
+- neovim 5.0 or greater
+- fzf
+- git
+- A Nerd Font
 
 ## Features
-* Fully documented config, designed to be understandable by both inexperienced and experienced (Work in progress)
-* Sane Defaults for ease of mind ᕕ( ᐛ )ᕗ
-* Popular coloschemes pre-packaged with lualine integration including:
-  * One Dark
-  * Nord
-  * Gruvbox
-  * Monokai
-  * and a few others!!
-* Easily Extensible configuration
-* Swag 	(̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄
+- Heavy focus on both in-source documentation and external documentation.
+- Sane Keybinds for extra added functionality
+- Small codebase for easy extensibility
+- A handful of plugins to build off neovim's strengths
+- Swag (and Minimalisim!!)
 
-## Screenshots
-Dashboard View (Onedark Theme)
-![Dashboard](https://github.com/Theory-of-Everything/imagehost/blob/main/nii-nvim/old/scrot_old.png?raw=true)
-General Interface
-![Code](https://github.com/Theory-of-Everything/imagehost/blob/main/nii-nvim/old/scrot_old3.png?raw=true)
-Lspkind Suggestions
-![Lspkind](https://github.com/Theory-of-Everything/imagehost/blob/main/nii-nvim/old/scrot_old2.png?raw=true)
-Telescope.nvim
-![Telescope](https://github.com/Theory-of-Everything/imagehost/blob/main/nii-nvim/old/scrot_old1.png?raw=true)
+## Support/Community
+If you are looking for help, or a relooking for others to interact with, you can join the "official" matrix room and discord server
+ - Matrix Room: [#nii-nvim:halogen.city](https://matrix.to/#/#nii-nvim:halogen.city)
+ - Discord Server: [Invite Link](https://discord.gg/H6WY7cUkfw)
 
-## Roadmap
-Currently there isn't much planned, however that are still some things I have in mind.
+# Screenshots
+## Functionality Showcase
+| | |
+|-|-|
+| <div align="center"> LSP and Autocompletion ![lsp](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/feat_completion.png) </div>  | <div align="center"> Hop Motions </div> ![hop](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/feat_hop.png) |
+| <div align="center"> Nvimtree sidebar </div> ![tree](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/feat_tree.png)| <div align="center"> Built-in Docs </div> ![docs](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/helpdoc.png)|
+| <div align="center"> Telescope Fuzzy File Find </div> ![file_find](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/telescope_0.png) | <div align="center"> Telescope Git Branch View/Switcher </div>![git](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/telescope_1.png) |
 
-Milestone | Status 
-----------|-------
-Easy Theme Switching (lualine/scheme) | In Progress
-Lualine colorscheme integration | Finished (for now anyway)
-Built-in Documentation | Finished (for most content as of #2)
-Better install script | Planned
-LuaSnip Support | Planned
-Base16-like custom theme configuration | Planned
+## Theme Showcase
+| | |
+|-|-|
+| <div align="center"> Everforest </div> ![Everforest](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_everforest.png) | <div align="center"> Bluewery </div>![Bluewery](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_bluewery.png) |
+| <div align="center"> Gruvbox-Material </div> ![Gruvbox-material](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_gruvboxmaterial.png) | <div align="center"> Nord </div> ![Nord](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_nord.png) |
