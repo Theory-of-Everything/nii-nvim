@@ -77,7 +77,7 @@ this is improper tabbing with imporper spacing in relation to the end comment!
 - All code should be well commented, with proper semantics as shown below
 
 ```lua
--- this is how to comment on blick of code
+-- this is how to comment on block of code
 function myfunc()          -- you can't comment a block like this
    print('myfunc() ran!')
 end
