@@ -2,74 +2,136 @@
 
 Decided to help and contribut to [nii-nvim](https://github.com/Theory-of-Everything/nii-nvim)? Great! I am always looking for contributors!
 
-Please take a moment to review this document in order to make the contribution
-process easy and effective for everyone involved.
+Please take a moment to review this document in order to make proper contributions and not waste time of the maintainer.
 
 Following these guidelines helps to communicate that you respect the time spent contributing to this Project.
-In return, I will reciprocate that respect in addressing your issue or assessing
-patches and features.
+In return, I will reciprocate that respect in addressing contributions.
 
+## Issues/Bug Reports
 
-## Using the issue tracker
+Please use the [issues](https://github.com/Theory-of-Everything/nii-nvim/issues) page on the GitHub repository to report bugs/issues.
+Keep all issue reports on-topic and relivant to the project.
 
-The [issue tracker](https://github.com/Theory-of-Everything/nii-nvim/issues) is
-the preferred channel for [bug reports](#bugs), [features requests](#features)
-and [submitting pull requests](#pull-requests), but please respect the following
-restrictions:
+<a name="code-conventions"></a>
 
-* You are allowed to use the issue tracker for personal support requests for the code present within the project, however, I **Can not** guarantee help for custom code, or stuff not realted to the main codebase.
+## Code Conventions
 
-* Please **do not** derail issues. Keep the discussion on topic and
-  respect the opinions of others.
+Code contributed to nii-nvim must follow these basic conventions:
 
-<a name="bugs"></a>
-## Bug reports
+- All module definitions should be defined as `M` in the respective containing file
+  Example:
+  (correct)
 
-A bug is a _demonstrable problem_ that is caused by the code in the repository.
-Good bug reports are extremely helpful - thank you!
+```lua
+local M = {}
 
-Guidelines for bug reports:
+M.myvar = 'hello world'
 
-1. **Search For existing Issues before submitting your own** &mdash; check if the issue has already been
-   reported.
+M.myfunc = function()
+   print('hello world')
+end
 
-2. **Check if the issue has been fixed in the most recent commit** &mdash; try to reproduce it using the
-   latest `master` or development branch in the repository.
+return M
+```
 
-A good bug report shouldn't leave others needing to chase you up for more
-information. Please try to be as detailed as possible in your report. What is
-your environment? What steps will reproduce the issue? What browser(s) and OS
-experience the problem? What would you expect to be the outcome? All these
-details will help people to fix any potential bugs.
+(incorrect)
 
-Example:
+```lua
+local module = {}
 
-> Short and descriptive example bug report title
->
-> A summary of the issue and any other specific or relivant information. If
-> suitable, include the steps required to reproduce the bug.
->
-> 1. This is the first step
-> 2. This is the second step
-> 3. Further steps, etc.
->
-> Any other information you want to share that is relevant to the issue being
-> reported. This might include the lines of code that you have identified as
-> causing the bug, and potential solutions (and your opinions on their
-> merits).
+module.myvar = 'hello world'
 
+module.myfunc = function()
+   print('hello world')
+end
 
-<a name="features"></a>
-## Feature requests
+return module
+```
 
-Feature requests are welcome. But take a moment to find out whether your idea
-fits with the scope the project. It's up to *you* to make a strong
-case to convince me of the merits of this feature. Please
-provide as much detail and context as possible.
-For the time being, I will not be considering adding more plugins to the config.
+- All strings are encapsulated in single quotes `'`, netsed quotes wil alternate between duoble quotes `"` and single quotes `'`
+  Example:
 
+```lua
+myvar0 = 'lua'     -- correct!
+
+myvar1 = "fennel"  -- incorrect!
+```
+
+- All files must have a breif description of their functionality and(or) layout/usage in multiline comments `--[[`/`--]]`. The contents of this comment should be tabbed once.
+  Example:
+
+```lua
+--[[
+
+   This is the file description with proper tabbing,
+   contained in a multiline comment.
+   Don't have descriptions in multiple single line comments
+   There shold also be 1 line of space between the comment and the text body
+
+this is improper tabbing with imporper spacing in relation to the end comment!
+--]]
+```
+
+- Tab style should be 4 spaces.
+- All varibles should be cast at the top of the file (unless local to a block)
+- All code should be well commented, with proper semantics as shown below
+
+```lua
+-- this is how to comment on blick of code
+function myfunc()          -- you can't comment a block like this
+   print('myfunc() ran!')
+end
+
+-- varbles can be commented like this regardless of size
+local mytable = {
+   'item1',
+   'item2',
+   'item3',
+}
+
+local myvarinline = nil -- small one-liners can be commented inline too (does not apply for blocks)
+
+```
+
+- You can format all code automatically with [stylua](https://github.com/johnnymorganz/stylua) this project's stylua configuration is in the `.stylua.toml` file
+- (you may (or may not) need to rename the stylua config file to `stylua.toml` without the dot)
+
+<a name="code-conventions"></a>
+
+## Commit Messages
+
+If you are into reading long articles, [this](https://medium.com/@nmpegetis/git-commit-message-conventions-841d6998fc4f) 
+article is mostly what this project follows in terms of commit messsages (although the whole history isnt like this)
+
+Heres the TD;DR:
+- Keep all commit messages in the imperative mood.
+- All commit messages must be short and consise.
+- All commits are prefered to be smaller than larger (atom commits).
+- all messages should follow this format: `<type>(<scope>): <description>`
+    - Where `<type>:` is the kid of change (i.e `fix:`, `patch:`, `chore:`, `docs:`) and is followed by the (optional) scope and (required) colon.
+    - Where `<scope>` is extra information about the change.
+    - Where `<description>` is a VERY SHORT description of the fix.
+- The commit message body (which is optional, but necissary for larger changes) should have a short description of the reasoning of the changes, and any potentially important details that the commit relates to.
+- The footer must reference any relevant issues/prs and indicate any issues/prs that that commit closes.
+- A boilerplate snippet:
+```
+[Issue-Code] <type>(<scope>): <description>
+<BLANK-LINE>
+<body>
+<BLANK-LINE>
+<footer>
+```
+Example Commit Message:
+```
+[Issue-Code-26,Issue-Code-32] feat(LoginView): add terminal name in login auth request
+
+Needed for Audit find.
+
+This closes Issue-Code-26 and refs Issue-Code-32
+```
 
 <a name="pull-requests"></a>
+
 ## Pull requests
 
 Good pull requests - patches, improvements, new features - are a fantastic
@@ -78,13 +140,9 @@ commits.
 
 **Please ask first** before embarking on any significant pull request (e.g.
 implementing features, refactoring code),
-otherwise you risk spending a lot of time working on something that I may not want megred into the main project.
+otherwise you risk spending a lot of time working on something that I may not want merged into the main project.
 
-Please adhere to the coding conventions used throughout a project (indentation,
-accurate comments, etc.) and any other requirements.
-
-Adhering to the following process is the best way to get your work
-included in the project:
+Please follow the Code Conventions and Commit Messages Guidelines when making contributions (explaned above).
 
 1. [Fork](https://help.github.com/articles/fork-a-repo/) the project, clone your
    fork, and configure the remotes:
@@ -121,6 +179,6 @@ included in the project:
    ```
 
 6. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
-    with a clear title and description.
+   with a clear title and description.
 
 **IMPORTANT**: By submitting a pull request, you agree to allow me to license your work under the terms of the [GPLv3 LICENCE](LICENSE).
