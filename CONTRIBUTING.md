@@ -1,6 +1,6 @@
 # Contributing to nii-nvim
 
-Decided to help and contribut to [nii-nvim](https://github.com/Theory-of-Everything/nii-nvim)? Great! I am always looking for contributors!
+Decided to help and contribute to [nii-nvim](https://github.com/Theory-of-Everything/nii-nvim)? Great! I am always looking for contributors!
 
 Please take a moment to review this document in order to make proper contributions and not waste time of the maintainer.
 
@@ -10,7 +10,7 @@ In return, I will reciprocate that respect in addressing contributions.
 ## Issues/Bug Reports
 
 Please use the [issues](https://github.com/Theory-of-Everything/nii-nvim/issues) page on the GitHub repository to report bugs/issues.
-Keep all issue reports on-topic and relivant to the project.
+Keep all issue reports on-topic and relevant to the project.
 
 <a name="code-conventions"></a>
 
@@ -48,7 +48,7 @@ end
 return module
 ```
 
-- All strings are encapsulated in single quotes `'`, netsed quotes wil alternate between duoble quotes `"` and single quotes `'`
+- All strings are encapsulated in single quotes `'`, nested quotes will alternate between double quotes `"` and single quotes `'`
   Example:
 
 ```lua
@@ -57,7 +57,7 @@ myvar0 = 'lua'     -- correct!
 myvar1 = "fennel"  -- incorrect!
 ```
 
-- All files must have a breif description of their functionality and(or) layout/usage in multiline comments `--[[`/`--]]`. The contents of this comment should be tabbed once.
+- All files must have a breif description of their functionality and(or) layout/usage in multi-line comments `--[[`/`--]]`. The contents of this comment should be tabbed once.
   Example:
 
 ```lua
@@ -101,14 +101,14 @@ local myvarinline = nil -- small one-liners can be commented inline too (does no
 ## Commit Messages
 
 If you are into reading long articles, [this](https://medium.com/@nmpegetis/git-commit-message-conventions-841d6998fc4f) 
-article is mostly what this project follows in terms of commit messsages (although the whole history isnt like this)
+article is mostly what this project follows in terms of commit messages (although the whole history isnt like this)
 
 Heres the TD;DR:
 - Keep all commit messages in the imperative mood.
 - All commit messages must be short and consise.
-- All commits are prefered to be smaller than larger (atom commits).
+- All commits are preferred to be smaller than larger (atom commits).
 - all messages should follow this format: `<type>(<scope>): <description>`
-    - Where `<type>:` is the kid of change (i.e `fix:`, `patch:`, `chore:`, `docs:`) and is followed by the (optional) scope and (required) colon.
+    - Where `<type>:` is the kind of change (i.e `fix:`, `patch:`, `chore:`, `docs:`) and is followed by the (optional) scope and (required) colon.
     - Where `<scope>` is extra information about the change.
     - Where `<description>` is a VERY SHORT description of the fix.
 - The commit message body (which is optional, but necissary for larger changes) should have a short description of the reasoning of the changes, and any potentially important details that the commit relates to.
