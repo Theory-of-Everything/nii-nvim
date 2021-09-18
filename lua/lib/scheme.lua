@@ -18,49 +18,48 @@ local M = {}
 -- NOTE: certain lualine default themes are exculded for
 -- improved asthetic changes
 local lualine_def_themes = {
-	"16color",
-	"ayu_dark",
-	"ayu_light",
-	"ayu_mirage",
-	"codedark",
-	"dracula",
-	"gruvbox",
-	"gruvbox_light",
-	"gurvbox_material",
-	"horizon",
-	"iceberg_dark",
-	"iceberg_light",
-	"jellybeans",
-	"material",
-	"modeus_vivendi",
-	"molokai",
-	"nightfly",
-	"nord",
-	"oceanicnext",
-	"onedark",
-	"onelight",
-	"palenight",
-	"papercolor_dark",
-	"papercolor_light",
-	"powerline",
-	"seoul256",
-	"solarized_dark",
-	"solarized_light",
-	"tommorow",
-	"wombat",
+	'16color',
+	'ayu_dark',
+	'ayu_light',
+	'ayu_mirage',
+	'codedark',
+	'dracula',
+	'gruvbox',
+	'gruvbox_light',
+	'gurvbox_material',
+	'horizon',
+	'iceberg_dark',
+	'iceberg_light',
+	'jellybeans',
+	'material',
+	'modeus_vivendi',
+	'molokai',
+	'nightfly',
+	'nord',
+	'oceanicnext',
+	'onedark',
+	'onelight',
+	'palenight',
+	'papercolor_dark',
+	'papercolor_light',
+	'powerline',
+	'seoul256',
+	'solarized_dark',
+	'solarized_light',
+	'tommorow',
+	'wombat',
 }
 
 -- string-based theme definitions for lualine schemes
 local lualine_def_styles = {
-	"powerline",
-	"dotline",
-	"chevron",
+	'powerline',
+	'dotline',
+	'chevron',
 }
 
-M.scheme = "everforest"                 -- specifies scheme. default is "everforest"
-M.lualine_style = { "", "" }          -- specifies lualine style
-M.lualine_seperator = { "", "" }      -- specifies lualine seperator style
-
+M.scheme = 'everforest' -- specifies scheme. default is "everforest"
+M.lualine_style = { '', '' } -- specifies lualine style
+M.lualine_seperator = { '', '' } -- specifies lualine seperator style
 
 -- if the scheme bundled with lualine?
 -- used in config/plug/lualine.lua
@@ -73,7 +72,7 @@ local scheme_loaded = false
 -- @param choice string
 -- The scheme name to load
 function M.load_scheme(choice)
-	require("themes." .. choice)
+	require('themes.' .. choice)
 	scheme_loaded = true
 end
 
@@ -102,10 +101,10 @@ end
 -- @param choice table
 -- used in config/plus/lualine.lua
 function M.set_lualine_style(choice)
-	if type(choice) == "table" then
+	if type(choice) == 'table' then
 		M.lualine_style = { choice[1], choice[2] }
 	else
-		M.lualine_style = { "", "" }
+		M.lualine_style = { '', '' }
 	end
 end
 
@@ -113,10 +112,10 @@ end
 -- @param choice table
 -- used in config/plus/lualine.lua
 function M.set_lualine_seperator(choice)
-	if type(choice) == "table" then
+	if type(choice) == 'table' then
 		M.lualine_seperator = { choice[1], choice[2] }
 	else
-		M.lualine_seperator = { "", "" }
+		M.lualine_seperator = { '', '' }
 	end
 end
 
@@ -124,7 +123,7 @@ end
 -- @param choice string
 -- The scheme name to load
 function M.load_shared_scheme(choice)
-	require("themes." .. choice)
+	require('themes.' .. choice)
 	M.load_lualine_scheme(choice)
 	scheme_loaded = true
 end
@@ -132,7 +131,7 @@ end
 -- checks if a scheme has been specified by the user
 -- if not, loads default scheme
 if scheme_loaded == false then
-	require("themes." .. M.scheme)
+	require('themes.' .. M.scheme)
 	M.load_lualine_scheme(M.scheme)
 end
 
