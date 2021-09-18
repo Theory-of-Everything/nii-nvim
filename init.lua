@@ -1,9 +1,12 @@
--- load theme loading library
-local scheme = require('lib.scheme')
+-- Load All packer
+require('plug')
 
 -- load keybindings and editor options
 require('keymap')
 require('options')
+
+-- load theme loading library
+local scheme = require('lib.scheme')
 
 -- Load Themes (loads everforest theme by default)
 -- load editor color theme

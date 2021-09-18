@@ -1,1 +1,1 @@
-require('colorizer').setup(nil,{names=false})
+require('colorizer').setup(nil, { names = false })
