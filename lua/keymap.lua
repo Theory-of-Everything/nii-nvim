@@ -7,6 +7,7 @@ local function map(mode, bind, exec, opts)
 end
 
 local opt = {} --empty opt for maps with no extra options
+local M = {}
 
 --[[ 
     MAPPING:
@@ -21,7 +22,7 @@ local opt = {} --empty opt for maps with no extra options
 --]]
 
 vim.g.mapleader = ' ' -- Map leader key to space
-map('n', '<leader>ln', ':set rnu!<CR>', opt) -- toggle relative line numbers
+map('n', '<C-n>', ':set rnu!<CR>', opt) -- toggle relative line numbers
 map('', '<C-c>', ':CommentToggle<CR>', opt) -- toggle comment on current line or selection
 map('', '<C-t>', ':NvimTreeToggle<CR>', opt) -- toggle nvimtree
 map('n', '<leader>nf', ':Neoformat<CR>', { noremap = true }) -- format current buffer with neoformat
@@ -31,13 +32,42 @@ map('n', '<leader>~', ':Dashboard<CR>', opt) -- map show dashboard
 map('n', '<leader>ya', ':%y+<CR>', opt) -- Copy content of entire buffer to system clipboard
 map('n', '<leader>yl', '"+yy', opt) -- yank current line into system clipboard
 
--- completion keybinds
-map('i', '<Tab>', 'v:lua.tab_complete()', { expr = true })
-map('s', '<Tab>', 'v:lua.tab_complete()', { expr = true })
-map('i', '<S-Tab>', 'v:lua.s_tab_complete()', { expr = true })
-map('s', '<S-Tab>', 'v:lua.s_tab_complete()', { expr = true })
-map('i', '<C-E>', '<Plug>luasnip-next-choice', {})
-map('s', '<C-E>', '<Plug>luasnip-next-choice', {})
+-- autocompletion mappings for cmp
+local cmp = require('cmp')
+M.cmp_mappings = {
+	['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' }),
+	['<S-Tab>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 's' }),
+	['<C-d>'] = cmp.mapping.scroll_docs(-4),
+	['<C-f>'] = cmp.mapping.scroll_docs(4),
+	['<C-Space>'] = cmp.mapping.complete(),
+	['<C-e>'] = cmp.mapping.close(),
+	['<CR>'] = cmp.mapping.confirm({
+		behavior = cmp.ConfirmBehavior.Replace,
+		select = true,
+	}),
+}
+
+-- gitsigns mappings
+M.gitsigns_mappings = {
+	noremap = true,
+	['n ]c'] = { expr = true, "&diff ? ']c' : '<cmd>lua require\"gitsigns.actions\".next_hunk()<CR>'" },
+	['n [c'] = { expr = true, "&diff ? '[c' : '<cmd>lua require\"gitsigns.actions\".prev_hunk()<CR>'" },
+
+	['n <leader>hs'] = '<cmd>lua require"gitsigns".stage_hunk()<CR>',
+	['v <leader>hs'] = '<cmd>lua require"gitsigns".stage_hunk({vim.fn.line("."), vim.fn.line("v")})<CR>',
+	['n <leader>hu'] = '<cmd>lua require"gitsigns".undo_stage_hunk()<CR>',
+	['n <leader>hr'] = '<cmd>lua require"gitsigns".reset_hunk()<CR>',
+	['v <leader>hr'] = '<cmd>lua require"gitsigns".reset_hunk({vim.fn.line("."), vim.fn.line("v")})<CR>',
+	['n <leader>hR'] = '<cmd>lua require"gitsigns".reset_buffer()<CR>',
+	['n <leader>hp'] = '<cmd>lua require"gitsigns".preview_hunk()<CR>',
+	['n <leader>hb'] = '<cmd>lua require"gitsigns".blame_line(true)<CR>',
+	['n <leader>hS'] = '<cmd>lua require"gitsigns".stage_buffer()<CR>',
+	['n <leader>hU'] = '<cmd>lua require"gitsigns".reset_buffer_index()<CR>',
+
+	-- Text objects
+	['o ih'] = ':<C-U>lua require"gitsigns.actions".select_hunk()<CR>',
+	['x ih'] = ':<C-U>lua require"gitsigns.actions".select_hunk()<CR>',
+}
 
 -- buffer management
 map('n', '<leader>bh', ':bf<CR>', { noremap = true })
@@ -46,12 +76,27 @@ map('n', '<leader>bj', ':bp<CR>', { noremap = true })
 map('n', '<leader>bl', ':bl<CR>', { noremap = true })
 map('n', '<leader>bd', ':bd<CR>', { noremap = true })
 
+-- window navigation
+map('n', '<leader>h', ':wincmd h<CR>', opt)
+map('n', '<leader>j', ':wincmd j<CR>', opt)
+map('n', '<leader>k', ':wincmd k<CR>', opt)
+map('n', '<leader>l', ':wincmd l<CR>', opt)
+
+-- terminal commands
+map('n', '<leader><CR>', ':vs | terminal<CR>i', opt)
+map('n', '<leader>\\', ':sp | terminal<CR>i', opt)
+map('t', '<C-esc>', '<C-\\><C-n>', opt)
+
 -- telescope pullup
 map('n', '<leader>ff', ':Telescope find_files<CR>', { noremap = true })
 map('n', '<leader>fF', ':Telescope file_browser<CR>', { noremap = true })
+map('n', '<leader>fw', ':Telescope live_grep<CR>', { noremap = true })
 map('n', '<leader>fg', ':Telescope git_commits<CR>', { noremap = true })
 map('n', '<leader>fG', ':Telescope git_branches<CR>', { noremap = true })
 
 -- hop.nvim
-map('n', '<leader>hH', ':HopWord<CR>', opt)
-map('n', '<leader>hh', ':HopLine<CR>', opt)
+map('n', '<leader>aH', ':HopWord<CR>', opt)
+map('n', '<leader>ah', ':HopLine<CR>', opt)
+
+-- returns any externally-required keymaps for usage
+return M
