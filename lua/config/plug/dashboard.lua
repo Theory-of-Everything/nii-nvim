@@ -28,8 +28,7 @@ g.dashboard_custom_section = {
 	c = { description = { '  Find Word                        ' }, command = 'Telescope live_grep' },
 	d = { description = { 'ﱐ  New File                         ' }, command = 'DashboardNewFile' },
 	e = { description = { '  Bookmarks                        ' }, command = 'Telescope marks' },
-	f = { description = { 'ﭯ  Load Last Session                ' }, command = 'SessionLoad' },
-	g = { description = { '  Open Help Doc                    ' }, command = 'view ~/.config/nvim/doc/helpdoc.md' },
+	f = { description = { '  Open Help Doc                    ' }, command = 'view ~/.config/nvim/doc/helpdoc.md' },
 }
 
 g.dashboard_custom_footer = {
