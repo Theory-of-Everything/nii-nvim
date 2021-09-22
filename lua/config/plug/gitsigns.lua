@@ -14,7 +14,7 @@ require('gitsigns').setup({
 
 	keymaps = keymap.gitsigns_mappings,
 
-	watch_index = {
+	watch_gitdir = {
 		interval = 1000,
 		follow_files = true,
 	},
