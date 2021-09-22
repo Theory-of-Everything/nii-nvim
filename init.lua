@@ -4,6 +4,7 @@ require('plug')
 -- load keybindings and editor options
 require('keymap')
 require('options')
+require('autocmds')
 
 -- load theme loading library
 local scheme = require('lib.scheme')
