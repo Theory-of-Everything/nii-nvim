@@ -35,14 +35,15 @@ map('n', '<leader>yl', '"+yy', opt) -- yank current line into system clipboard
 -- autocompletion mappings for cmp
 local cmp = require('cmp')
 M.cmp_mappings = {
+
 	['<Tab>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 's' }),
 	['<S-Tab>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 's' }),
+	['<C-Space>'] = cmp.mapping.complete(),
 	['<C-d>'] = cmp.mapping.scroll_docs(-4),
 	['<C-f>'] = cmp.mapping.scroll_docs(4),
-	['<C-Space>'] = cmp.mapping.complete(),
 	['<C-e>'] = cmp.mapping.close(),
 	['<CR>'] = cmp.mapping.confirm({
-		behavior = cmp.ConfirmBehavior.Replace,
+		behavior = cmp.ConfirmBehavior.Insert,
 		select = true,
 	}),
 }
@@ -53,16 +54,16 @@ M.gitsigns_mappings = {
 	['n ]c'] = { expr = true, "&diff ? ']c' : '<cmd>lua require\"gitsigns.actions\".next_hunk()<CR>'" },
 	['n [c'] = { expr = true, "&diff ? '[c' : '<cmd>lua require\"gitsigns.actions\".prev_hunk()<CR>'" },
 
-	['n <leader>hs'] = '<cmd>lua require"gitsigns".stage_hunk()<CR>',
-	['v <leader>hs'] = '<cmd>lua require"gitsigns".stage_hunk({vim.fn.line("."), vim.fn.line("v")})<CR>',
-	['n <leader>hu'] = '<cmd>lua require"gitsigns".undo_stage_hunk()<CR>',
-	['n <leader>hr'] = '<cmd>lua require"gitsigns".reset_hunk()<CR>',
-	['v <leader>hr'] = '<cmd>lua require"gitsigns".reset_hunk({vim.fn.line("."), vim.fn.line("v")})<CR>',
-	['n <leader>hR'] = '<cmd>lua require"gitsigns".reset_buffer()<CR>',
-	['n <leader>hp'] = '<cmd>lua require"gitsigns".preview_hunk()<CR>',
-	['n <leader>hb'] = '<cmd>lua require"gitsigns".blame_line(true)<CR>',
-	['n <leader>hS'] = '<cmd>lua require"gitsigns".stage_buffer()<CR>',
-	['n <leader>hU'] = '<cmd>lua require"gitsigns".reset_buffer_index()<CR>',
+	['n <leader>gs'] = '<cmd>lua require"gitsigns".stage_hunk()<CR>',
+	['v <leader>gs'] = '<cmd>lua require"gitsigns".stage_hunk({vim.fn.line("."), vim.fn.line("v")})<CR>',
+	['n <leader>gu'] = '<cmd>lua require"gitsigns".undo_stage_hunk()<CR>',
+	['n <leader>gr'] = '<cmd>lua require"gitsigns".reset_hunk()<CR>',
+	['v <leader>gr'] = '<cmd>lua require"gitsigns".reset_hunk({vim.fn.line("."), vim.fn.line("v")})<CR>',
+	['n <leader>gR'] = '<cmd>lua require"gitsigns".reset_buffer()<CR>',
+	['n <leader>gp'] = '<cmd>lua require"gitsigns".preview_hunk()<CR>',
+	['n <leader>gb'] = '<cmd>lua require"gitsigns".blame_line(true)<CR>',
+	['n <leader>gS'] = '<cmd>lua require"gitsigns".stage_buffer()<CR>',
+	['n <leader>gU'] = '<cmd>lua require"gitsigns".reset_buffer_index()<CR>',
 
 	-- Text objects
 	['o ih'] = ':<C-U>lua require"gitsigns.actions".select_hunk()<CR>',
