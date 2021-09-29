@@ -23,5 +23,6 @@ scheme.load_shared_scheme('everforest')
 -- load configurations
 -- config.plug loads plugin configurations
 -- config.module loads user contrib files (work in progress)
+require('config.lsp')
 require('config.plug')
 require('config.modules')

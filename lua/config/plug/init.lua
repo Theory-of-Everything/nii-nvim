@@ -3,7 +3,6 @@ This init file loads all of the plugin configuration files
 --]]
 
 return {
-	require('config.plug.lsp'),
 	require('config.plug.hop'),
 	require('config.plug.cmp'),
 	require('config.plug.lualine'),

@@ -6,7 +6,6 @@ require('packer').startup({
 		-- lsp realted plugins
 		-- includes autocomplete and lsp suggestions
 		use('neovim/nvim-lspconfig')
-		use('kabouzeid/nvim-lspinstall')
 		use('onsails/lspkind-nvim')
 
 		-- autocompletion
