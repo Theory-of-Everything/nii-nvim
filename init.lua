@@ -1,29 +1,19 @@
+-- Load All packer
+require('plug')
 -- load keybindings and editor options
 require('keymap')
 require('options')
+require('autocmds')
 
--- load all of the packer plugins stuff
-require('plug')
-
--- enable true color
-vim.opt.termguicolors = true
+-- load theme loading library
+local scheme = require('lib.scheme')
 
 -- load theme system
 require('config.themes')
 
--- load individual plugin configurations
-require('config.dashboard')
-require('config.bufferline')
+-- load configurations
+-- config.plug loads plugin configurations
+-- config.module loads user contrib files (work in progress)
 require('config.lsp')
-require('config.compe')
-require('config.lspkind')
-require('config.autopairs')
-require('config.nvimtree')
-require('config.lualine')
-require('config.gitsigns')
-require('config.nvim-comment')
-require('config.nvim-treesitter')
-require('config.nvim-colorizer')
-
--- load user-made modules
-require('modules')
+require('config.plug')
+require('config.modules')

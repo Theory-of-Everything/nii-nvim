@@ -1,0 +1,4 @@
+plugin/*
+undo/*
+snips/*
+lua/config/modules/*
