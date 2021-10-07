@@ -1,6 +1,7 @@
 local scheme = require('scheme')
 local settings = require('modules.external-conf')
 
+settings.load_settings()
 local themes_list = {
     "bluewery", "everforest", "gruvbox-material", "gruvbox", "monokai",
     "night-owl", "nord", "onedark"
@@ -31,20 +32,22 @@ scheme.load_shared_scheme(current_shared_scheme)
 function _G.cycle_scheme ()
     index_scheme = (index_scheme % #themes_list) + 1
     scheme.load_shared_scheme(themes_list[index_scheme])
-    settings.set_value("shared-scheme", index_scheme)
+    settings.set_value("shared-scheme", themes_list[index_scheme])
 end
 function _G.cycle_lualine_scheme ()
     index_lualine_scheme = (index_lualine_scheme % #themes_list) + 1
     scheme.load_shared_scheme(themes_list[index_lualine_scheme])
-    settings.set_value("shared-scheme", index_lualine_scheme)
+    settings.set_value("shared-scheme", themes_list[index_lualine_scheme])
 end
 function _G.cycle_shared_scheme ()
     index_shared_scheme = (index_shared_scheme % #themes_list) + 1
+    print(index_shared_scheme)
+    print(themes_list[index_shared_scheme])
     scheme.load_shared_scheme(themes_list[index_shared_scheme])
-    settings.set_value("shared-scheme", index_shared_scheme)
+    settings.set_value("shared-scheme", themes_list[index_shared_scheme])
 end
 
 --[[
     Example to mapping
 ]]
-vim.api.nvim_set_keymap("n", "<leader>tn", ":lua cycle_shared_scheme()<Cr>")
+vim.api.nvim_set_keymap("n", "<leader>tn", ":lua cycle_shared_scheme()<Cr>", {})
