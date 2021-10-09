@@ -3,8 +3,8 @@ require('packer').startup({
 		-- packer self management
 		use('wbthomason/packer.nvim')
 
-		-- lsp realted plugins
-		-- includes autocomplete and lsp suggestions
+		-- {{{ lsp/autocompletion/snippets
+		-- lsp plugins
 		use('neovim/nvim-lspconfig')
 		use('onsails/lspkind-nvim')
 
@@ -21,11 +21,12 @@ require('packer').startup({
 		-- snippets
 		use('sirver/ultisnips')
 		use('quangnguyen30192/cmp-nvim-ultisnips')
+		-- }}}
 
-		-- utility plugins
+		-- {{{ utility plugins
 		-- these plugins are all realted to editor configs
 		use({ 'hoob3rt/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } })
-		use({ 'akinsho/nvim-bufferline.lua', requires = 'kyazdani42/nvim-web-devicons' })
+		use('kdheepak/tabline.nvim')
 		use({ 'nvim-telescope/telescope.nvim', requires = { { 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' } } })
 		use({ 'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons' })
 		use({ 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' })
@@ -33,17 +34,17 @@ require('packer').startup({
 		use('terrortylor/nvim-comment')
 		use('sbdchd/neoformat')
 		use('phaazon/hop.nvim')
+		use({ 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } })
+		-- }}}
 
-		-- cosmetic addition plugins
+		-- {{{ imporved syntax plugins
 		-- these add in a bit more bling and flair to nvim
 		use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
 		use('glepnir/dashboard-nvim')
 		use('norcalli/nvim-colorizer.lua')
+		-- }}}
 
-		-- git realted plugins
-		use({ 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } })
-
-		-- themes
+		-- {{{ themes
 		-- popular themes incoming
 		use('joshdick/onedark.vim')
 		use('sickill/vim-monokai')
@@ -55,6 +56,7 @@ require('packer').startup({
 		use('sainnhe/everforest')
 		use('relastle/bluewery.vim')
 		use('haishanh/night-owl.vim')
+		-- }}}
 	end,
 	-- display packer dialouge in the center in a floating window
 	config = {
@@ -63,3 +65,5 @@ require('packer').startup({
 		},
 	},
 })
+
+-- # vim foldmethod=marker
