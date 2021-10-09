@@ -1,4 +1,4 @@
 return {
-	require('config.lsp.lsp'),
+	require('config.lsp.setup'),
 	require('config.lsp.lua_lsp'),
 }

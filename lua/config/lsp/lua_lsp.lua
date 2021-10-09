@@ -11,14 +11,8 @@ else
 	print('Unsupported system for sumneko')
 end
 
--- check if lspservers directory exists
-local lspserver_dir = fn.isdirectory(fn.stdpath('cache') .. '/lspservers')
-if lspserver_dir == 0 then
-	fn.mkdir(fn.stdpath('cache') .. '/lspservers')
-end
-
 -- set the path to the sumneko installation (ABSOLUTE PATH)
-local sumneko_install_path = fn.stdpath('cache') .. '/lspservers/lua-language-server'
+local sumneko_install_path = fn.stdpath('data') .. '/lspservers/lua-language-server'
 local sumneko_binary = sumneko_install_path .. '/bin/' .. system_name .. '/lua-language-server'
 
 local runtime_path = vim.split(package.path, ';')
