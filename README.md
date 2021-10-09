@@ -47,6 +47,7 @@ Also the name is cute. 	(・3・)
 - fzf
 - git
 - A Nerd Font
+- ripgrep
 
 ## Features
 - Heavy focus on both in-source documentation and external documentation.
