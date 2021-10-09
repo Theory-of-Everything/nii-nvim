@@ -22,7 +22,10 @@ scheme.load_shared_scheme('everforest')
 
 -- load configurations
 -- config.plug loads plugin configurations
+-- config.lsp handles al lsp server configuration
 -- config.module loads user contrib files (work in progress)
 require('config.lsp')
 require('config.plug')
 require('config.modules')
+
+-- # vim foldmethod=marker

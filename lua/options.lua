@@ -26,8 +26,8 @@ o.smartindent = true    -- nice indenting
 o.foldmethod = 'marker' 	-- set fold method to marker
 
 -- backup/swap files
-opt.swapfile = false
-opt.undofile = false
+opt.swapfile = false  	-- have files saved to swap
+opt.undofile = true		-- file undo history preserved outside current session
 
 -- new win split options
 opt.splitbelow = true
@@ -35,3 +35,5 @@ opt.splitright = true
 o.completeopt = 'menuone,noselect'
 
 vim.opt.termguicolors = true
+
+-- # vim foldmethod=marker
