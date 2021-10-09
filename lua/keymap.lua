@@ -1,3 +1,4 @@
+-- {{{
 local function map(mode, bind, exec, opts)
 	local options = { noremap = true, silent = true }
 	if opts then
@@ -8,6 +9,7 @@ end
 
 local opt = {} --empty opt for maps with no extra options
 local M = {}
+-- }}}
 
 --[[ 
     MAPPING:
@@ -21,6 +23,7 @@ local M = {}
 		map("n", "<C-n>", ":set rnu!<CR>", opt)
 --]]
 
+-- {{{ misc bindings
 vim.g.mapleader = ' ' -- Map leader key to space
 map('n', '<C-n>', ':set rnu!<CR>', opt) -- toggle relative line numbers
 map('', '<C-c>', ':CommentToggle<CR>', opt) -- toggle comment on current line or selection
@@ -31,8 +34,9 @@ map('n', '<leader>~', ':Dashboard<CR>', opt) -- map show dashboard
 -- clipboard mappings
 map('n', '<leader>ya', ':%y+<CR>', opt) -- Copy content of entire buffer to system clipboard
 map('n', '<leader>yl', '"+yy', opt) -- yank current line into system clipboard
+-- }}}
 
--- autocompletion mappings for cmp
+-- {{{ autocompletion mappings for cmp
 local cmp = require('cmp')
 M.cmp_mappings = {
 
@@ -47,8 +51,9 @@ M.cmp_mappings = {
 		select = true,
 	}),
 }
+-- }}}
 
--- gitsigns mappings
+-- {{{ gitsigns mappings
 M.gitsigns_mappings = {
 	noremap = true,
 	['n ]c'] = { expr = true, "&diff ? ']c' : '<cmd>lua require\"gitsigns.actions\".next_hunk()<CR>'" },
@@ -69,31 +74,36 @@ M.gitsigns_mappings = {
 	['o ih'] = ':<C-U>lua require"gitsigns.actions".select_hunk()<CR>',
 	['x ih'] = ':<C-U>lua require"gitsigns.actions".select_hunk()<CR>',
 }
+-- }}}
 
--- buffer management
+-- {{{ buffer management
 map('n', '<leader>bh', ':bf<CR>', { noremap = true })
 map('n', '<leader>bk', ':bn<CR>', { noremap = true })
 map('n', '<leader>bj', ':bp<CR>', { noremap = true })
 map('n', '<leader>bl', ':bl<CR>', { noremap = true })
 map('n', '<leader>bd', ':bd<CR>', { noremap = true })
+-- }}}
 
--- window navigation
+-- {{{ window navigation
 map('n', '<leader>h', ':wincmd h<CR>', opt)
 map('n', '<leader>j', ':wincmd j<CR>', opt)
 map('n', '<leader>k', ':wincmd k<CR>', opt)
 map('n', '<leader>l', ':wincmd l<CR>', opt)
+-- }}}
 
--- terminal commands
+-- {{{ terminal commands
 map('n', '<leader><CR>', ':vs | terminal<CR>i', opt)
 map('n', '<leader>\\', ':sp | terminal<CR>i', opt)
 map('t', '<C-esc>', '<C-\\><C-n>', opt)
+-- }}}
 
--- telescope pullup
+-- {{{ telescope pullup
 map('n', '<leader>ff', ':Telescope find_files<CR>', { noremap = true })
 map('n', '<leader>fF', ':Telescope file_browser<CR>', { noremap = true })
 map('n', '<leader>fw', ':Telescope live_grep<CR>', { noremap = true })
 map('n', '<leader>fg', ':Telescope git_commits<CR>', { noremap = true })
 map('n', '<leader>fG', ':Telescope git_branches<CR>', { noremap = true })
+-- }}}
 
 -- hop.nvim
 map('n', '<leader>aH', ':HopWord<CR>', opt)
@@ -101,3 +111,5 @@ map('n', '<leader>ah', ':HopLine<CR>', opt)
 
 -- returns any externally-required keymaps for usage
 return M
+
+-- # vim foldmethod=marker

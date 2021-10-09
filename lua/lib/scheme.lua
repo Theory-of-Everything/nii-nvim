@@ -14,7 +14,7 @@ directory
 -- module definition
 local M = {}
 
--- list of pre-packaged lualine themes
+-- {{{ list of pre-packaged lualine themes
 -- NOTE: certain lualine default themes are exculded for
 -- improved asthetic changes
 local lualine_def_themes = {
@@ -50,13 +50,15 @@ local lualine_def_themes = {
 	'wombat',
 }
 
--- string-based theme definitions for lualine schemes
+-- string-based theme definitions for lualine schemes [WIP]
 local lualine_def_styles = {
 	'powerline',
 	'dotline',
 	'chevron',
 }
+-- }}}
 
+-- {{{ varible definitions
 M.scheme = 'everforest' -- specifies scheme. default is "everforest"
 M.lualine_style = { '', '' } -- specifies lualine style
 M.lualine_seperator = { '', '' } -- specifies lualine seperator style
@@ -67,7 +69,9 @@ M.is_lualine_default = false
 
 -- local indicators if a scheme has been loaded
 local scheme_loaded = false
+-- }}}
 
+-- {{{ scheme loaders
 -- pretty wrapper for loading theme files
 -- @param choice string
 -- The scheme name to load
@@ -97,6 +101,17 @@ function M.load_lualine_scheme(choice)
 	scheme_loaded = true
 end
 
+-- loads both editor and statusline scheme simultaniously
+-- @param choice string
+-- The scheme name to load
+function M.load_shared_scheme(choice)
+	require('themes.' .. choice)
+	M.load_lualine_scheme(choice)
+	scheme_loaded = true
+end
+-- }}}
+
+-- {{{ styles
 -- sets the style for the lualine bar
 -- @param choice table
 -- used in config/plus/lualine.lua
@@ -118,15 +133,7 @@ function M.set_lualine_seperator(choice)
 		M.lualine_seperator = { '', '' }
 	end
 end
-
--- loads both editor and statusline scheme simultaniously
--- @param choice string
--- The scheme name to load
-function M.load_shared_scheme(choice)
-	require('themes.' .. choice)
-	M.load_lualine_scheme(choice)
-	scheme_loaded = true
-end
+-- }}}
 
 -- checks if a scheme has been specified by the user
 -- if not, loads default scheme
@@ -136,3 +143,5 @@ if scheme_loaded == false then
 end
 
 return M
+
+-- # vim foldmethod=marker
