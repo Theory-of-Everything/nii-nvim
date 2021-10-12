@@ -48,6 +48,7 @@ Also the name is cute. 	(・3・)
 - git
 - A Nerd Font
 - ripgrep
+- Python 3
 
 ## Features
 - Heavy focus on both in-source documentation and external documentation.
