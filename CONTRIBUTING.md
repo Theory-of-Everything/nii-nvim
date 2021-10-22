@@ -48,7 +48,7 @@ end
 return module
 ```
 
-- All strings are encapsulated in single quotes `'`, nested quotes will alternate between double quotes `"` and single quotes `'`
+- All strings are encapsulated in single quotes `'`, nested quotes wil alternate between double quotes `"` and single quotes `'`
   Example:
 
 ```lua
@@ -57,7 +57,7 @@ myvar0 = 'lua'     -- correct!
 myvar1 = "fennel"  -- incorrect!
 ```
 
-- All files must have a breif description of their functionality and(or) layout/usage in multi-line comments `--[[`/`--]]`. The contents of this comment should be tabbed once.
+- All files must have a brief description of their functionality and(or) layout/usage in multiline comments `--[[`/`--]]`. The contents of this comment should be tabbed once.
   Example:
 
 ```lua
@@ -73,11 +73,11 @@ this is improper tabbing with imporper spacing in relation to the end comment!
 ```
 
 - Tab style should be 4 spaces.
-- All varibles should be cast at the top of the file (unless local to a block)
+- All variables should be cast at the top of the file (unless local to a block)
 - All code should be well commented, with proper semantics as shown below
 
 ```lua
--- this is how to comment on block of code
+-- this is how to comment on blick of code
 function myfunc()          -- you can't comment a block like this
    print('myfunc() ran!')
 end
@@ -101,17 +101,17 @@ local myvarinline = nil -- small one-liners can be commented inline too (does no
 ## Commit Messages
 
 If you are into reading long articles, [this](https://medium.com/@nmpegetis/git-commit-message-conventions-841d6998fc4f) 
-article is mostly what this project follows in terms of commit messages (although the whole history isnt like this)
+article is mostly what this project follows in terms of commit messages (although the whole history isn't like this)
 
-Heres the TD;DR:
+Here is the TD;DR:
 - Keep all commit messages in the imperative mood.
-- All commit messages must be short and consise.
+- All commit messages must be short and concise.
 - All commits are preferred to be smaller than larger (atom commits).
 - all messages should follow this format: `<type>(<scope>): <description>`
-    - Where `<type>:` is the kind of change (i.e `fix:`, `patch:`, `chore:`, `docs:`) and is followed by the (optional) scope and (required) colon.
+    - Where `<type>:` is the kid of change (i.e `fix:`, `patch:`, `chore:`, `docs:`) and is followed by the (optional) scope and (required) colon.
     - Where `<scope>` is extra information about the change.
     - Where `<description>` is a VERY SHORT description of the fix.
-- The commit message body (which is optional, but necissary for larger changes) should have a short description of the reasoning of the changes, and any potentially important details that the commit relates to.
+- The commit message body (which is optional, but necessary for larger changes) should have a short description of the reasoning of the changes, and any potentially important details that the commit relates to.
 - The footer must reference any relevant issues/prs and indicate any issues/prs that that commit closes.
 - A boilerplate snippet:
 ```
@@ -142,7 +142,7 @@ commits.
 implementing features, refactoring code),
 otherwise you risk spending a lot of time working on something that I may not want merged into the main project.
 
-Please follow the Code Conventions and Commit Messages Guidelines when making contributions (explaned above).
+Please follow the Code Conventions and Commit Messages Guidelines when making contributions (explained above).
 
 1. [Fork](https://help.github.com/articles/fork-a-repo/) the project, clone your
    fork, and configure the remotes:
@@ -170,7 +170,7 @@ Please follow the Code Conventions and Commit Messages Guidelines when making co
    git checkout -b <branch-name>
    ```
 
-4. Commit your changes in logical chunks. Please keep your commit messages short but consise.
+4. Commit your changes in logical chunks. Please keep your commit messages short but concise.
 
 5. Push your topic branch up to your fork:
 

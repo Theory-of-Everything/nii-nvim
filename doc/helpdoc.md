@@ -12,7 +12,7 @@ This is currently a work in progress, so contributing to the project would be ve
 ## Welcome to the builtin helpdoc!
 This is a In-editor documentation page for nii-nvim. This contains all of the relevant information on the semantics of the config.
 
-**NOTE** This isn't intended to be a guide for nvim itself, as there are many other better places for you to learn nvim anyway.
+**NOTE** This isn't intended to be a guide for nvim itself, as there are many other better places for you to learn nvim.
 
 ## Table of Contents
 *You can search for sections with nvim's built in search `/` command like /[01]*
@@ -56,10 +56,10 @@ The basic file tree follows:
         │   └── ...
         └── ...
 ```
- - `init.lua`: 			    The entry point for the config loading, almost all of the modules are `require()`ed here.
- - `lua/`: 		    	    The directory that is sourced by neovim for importing, most of the stuff not present in the init file will be here
+ - `init.lua`: 			    The entry point for the config, almost all of the modules loaded through `require()` are here.
+ - `lua/`: 		    	    The directory that is sourced by neovim for importing, most of the stuff not present in the init file will be here.
  - `lua/config/`: 		    This is the directory contains the config files for the default plugins.
- - `lua/modules/`: 		    This is a WIP, more documentation related to it will come soon once it is finished
+ - `lua/modules/`: 		    This is a WIP, more documentation related to it will come soon once it is finished.
  - `lua/themes/`: 		    This contains all of the init files for each theme packaged with nii-nvim. (note these are not color definitions!!)
  - `lua/themes/lualine/`: 	This directory contains all of the themes for lualine and their respective colors. (note these are color definitions.)
  - `lua/keymap.lua`: 		All of the custom keybind definitions.
@@ -70,19 +70,19 @@ The basic file tree follows:
 
 ### Understanding the init.lua
 
-The init.lua file in the root directory of nii-nvim is going to be the basic entry-point for basic modifications of the default configuration.
+The init.lua file in the root directory of nii-nvim is going to be the entry-point for basic modifications of the default configuration.
 Most of the core modules are loaded in the init.lua file, along with setting initialization and theme setting.
 
-In general, the init will usually have all of the relivant `require()`s and reference the `scheme` library for theme setting.
+In general, the init will contain all of the relevant `require()` commands, and reference the `scheme` library for theme setting.
 Generally, you probably won't want to be adding code in the init file, as its main purpose is to require any needed modules for startup.
-However, quick code testing here might prove useful, as you don't need to keep track of a extra file and require.
+However, quick code testing here might prove useful, as you don't need to keep track of a extra files and requirements.
 
 ### Adding New Plugins
-Adding in plugins is a trivial task, however, this base configuration has some basic organization rules that (I would hope) that you would replicate
+Adding in plugins is a trivial task, however, this base configuration has some basic organization rules that you would replicate. (I would hope)
 If you want to add a plugin, these are the basic steps that nii-nvim takes.
 
 
-Plugins to install with packer are defined in the `lua/plug.lua` file so add your plug to the file. (In this case we will be installing [presence.nvim](https://github.com/andweeb/presence.nvim))
+Plugins to install with Packer are defined in the `lua/plug.lua` file so add your plug to the file. (In this case we will be installing [presence.nvim](https://github.com/andweeb/presence.nvim))
 ```lua
 return require('packer').startup(function(use)
 ...
@@ -91,9 +91,9 @@ return require('packer').startup(function(use)
 end)
 ```
 
-Next you will want to create the configuration file for initialization of the plugin.
+Next, you will want to create the configuration file that initializes the plugin.
  - Plugin config files are made in the `lua/config/` directory.
- - Make a file `lua/config/presence.lua` ndn write all the code for the plugin to startup as desired.
+ - Make a file `lua/config/presence.lua` and write all the code for the plugin to startup as desired.
  - Lastly, require the file in the `init.lua`
  ```lua
 ...
@@ -122,8 +122,8 @@ map("n", "<leader>s", ":%s/"/'/g', opts)
 
 ### Changing the colorscheme
 
-By default, nii-nvim (should) be using the onedark colorscheme for both nvim and lualine, however, if you want to change the theme, you can do that pretty easily
-in your `init.lua` there should be a line:
+By default, nii-nvim (should) be using the Onedark colorscheme for both nvim and lualine. However, if you want to change the theme, you can do that pretty easily.
+In your `init.lua` there should be a line:
  - `scheme.load_shared_scheme('onedark')`
 
 This is the code that sets the colorscheme configuration for both nvim and lualine.
@@ -155,9 +155,9 @@ scheme.load_lualine_scheme('minimaldark')
  ```
 ### Adding Colorschemes
 
-nii-nvim handles coloschemes in a different manner than most normal configurations, as loading is handled by the scheme module.
+nii-nvim handles coloschemes in a different manner than most other configurations, as loading is handled by the scheme module.
 All theme loading files are defined in `lua/themes/`.
-To add a theme (whether installed via plugin or custom) crate a file in the themes folder, then add all required code for the theme so load:
+To add a theme (whether installed via plugin or custom) create a file in the themes folder, then add all required code for the theme so load:
 
 **Sample: (Gruvbox)**
 ```lua
@@ -167,8 +167,8 @@ vim.cmd('colorscheme gruvbox')
 -- EOF
 ```
 
-You can also create custom statusline themes by taking the boilerplate code in `lua/themes/lualine/custom.lua` and create your own statusline theme.
-**NOTE:** The scheme loading functions directly depend on the filename, so when specifying a theme, make sure that you use the filename when you use scheme functions.
+You can also create custom statusline themes by taking the boilerplate code in `lua/themes/lualine/custom.lua` and modifying it to your own statusline theme.
+**NOTE:** The scheme loading functions directly depend on the filename, so when specifying a theme, make sure that you use the correct filename when scheme functions are called.
 
 # [03] Contributing
 nii-nvim is currently in pre-release, so any contributions are highly appreciated.

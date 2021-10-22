@@ -25,20 +25,20 @@
   
 </div>
 
-nii-nvim is a very minimal neovim configuration focused on creating a functional editor with a minimal amount code. nii-nvim also has the user in mind by being very extensible and documented.
+Nii-nvim is a very minimal neovim configuration focused on creating a functional editor with a minimal amount of code. Nii-nvim also keeps the user in mind by being very extensible and well documented.
 #### **NOTE**: nii-nvim is currently under development, meaning that many things may not work as intended, or may not be implemented at all.
 
 ## Why nii-nvim?
-There are many neovim configurations that exist (i.e. NvChad, Lunar Vim, etc.), however, amny of these configurations suffer from a host of problems.
+There are many neovim configurations that exist (i.e. NvChad, Lunar Vim, etc.). However, many of these configurations suffer from a host of problems:
  - Some configurations (like NvChad), have very abstracted and complex codebases.
  - Others rely on having as much overall functionality as possible (like LunarVim).
 
 While none of this is bad, there are some problems that can arise from these choices:
- - Complex codebases lead to less freedom for end-user extensiblity and configuration, as there is more reliance on teh maintainer of said code.
- - Users may not use half of what is made avalible to them simply because they don't need all of that functionality, so all of it may not be necissary
+ - Complex codebases lead to less freedom for end-user extensiblity and configuration, as there is more reliance on the maintainer of said code.
+ - Users may not use half of what is made avalible to them simply because they don't need all of that functionality, so all of it may not be necessary.
 
-nii-nvim provides a solution to these problems by providing only the bare minimum of necissary code in order to make a functioning configuration.
-The end goal of nii-nvim is to be use as a base config for users to extend and add upon, leading to a more unique editing experience.
+nii-nvim provides a solution to these problems by providing only the necessary code in order to make a functioning configuration.
+The end goal of nii-nvim is to be used as a base config for users to extend and add upon, leading to a more unique editing experience.
 
 Also the name is cute. 	(・3・)
 
@@ -51,14 +51,14 @@ Also the name is cute. 	(・3・)
 - Python 3
 
 ## Features
-- Heavy focus on both in-source documentation and external documentation.
+- Heavy focus on both in-source documentation as well as external documentation.
 - Sane Keybinds for extra added functionality
 - Small codebase for easy extensibility
-- A handful of plugins to build off neovim's strengths
+- A handful of plugins that build off neovim's strengths
 - Swag (and Minimalisim!!)
 
 ## Support/Community
-If you are looking for help, or a relooking for others to interact with, you can join the "official" matrix room and discord server
+If you are looking for help, or are looking for others to interact with, you can join the "official" Matrix room and Discord server
  - Matrix Room: [#nii-nvim:halogen.city](https://matrix.to/#/#nii-nvim:halogen.city)
  - Discord Server: [Invite Link](https://discord.gg/H6WY7cUkfw)
 
