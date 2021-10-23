@@ -5,13 +5,13 @@ Welcome to the nii-nvim keybinds doc! Here you will find references to all of th
 ### Understanding doc syntax
 
 #### Normal Keybind Syntax
-`f` 		Definesaa keybind sequence of f
-`F` 		Definesaa keybind sequence of Shift-f
+`f` 		Defines a keybind sequence of f
+`F` 		Defines a keybind sequence of Shift-f
 `<C-f>`		Defines a keybind seqence of Ctrl-f
 `<C-F>` 	Defines a keybind squence of Ctrl-Shift-f
 
 #### Leader Keybind Syntax
-`<leader>` 	Indicates the leader key (Default: Space)
+`<leader>` 		Indicates the leader key (Default: Space)
 `<leader>f` 	Indicates the leader key plus f (Think Space-f)
 `<leader>f` 	Indicates the leader key plus capital F (Think Space-Shift-f)
 
@@ -34,24 +34,24 @@ Welcome to the nii-nvim keybinds doc! Here you will find references to all of th
 `x`:			Cut file/directory to tree clipbaord
 `c`:			Copy file/directory to tree clipbaord
 `y`:			Copy file name to system clipboard
-`Y`:			Copy realtive path to system clipboard
-`gy`:			Copy absolut path to clipboard
-`P`:			Paste from tree clipboard (Cut files have precidence of Copied files)
+`Y`:			Copy relative path to system clipboard
+`gy`:			Copy absolute path to system clipboard
+`P`:			Paste from tree clipboard (Cut files have precidence over Copied files)
 `d`:			Delete file/directory (will prompt for confirmation)
 `]c`:			Next git item
 `[c`:			Previous git item
-`-`:			Navigate to the parent direcory of the curretn file/directory
-`s`:			Open file with system defaul application and directory with system file manager
+`-`:			Navigate to the parent direcory of the current file/directory
+`s`:			Open file with system default application and directory with system file manager
 
 `<C-v>`:		Open file in a vertical split
-`<C-x>`:		Open file in horizontal split
+`<C-x>`:		Open file in a horizontal split
 `<C-t>`:		Open file in new buffer
-`<Tab>`:		Preview file in new buffer (keeps cursor in tree)
+`<Tab>`:		Preview file in a new buffer (keeps cursor in tree)
 `I`:			Toggle visibility of configured hidden files/directories
 `H`:			Toggle visibility of hidden files/directories (dotfiles)
 `R`:			Refresh Tree
 
-`<Mouse1>`:		Double clicking actl like `<CR>`
+`<Mouse1>`:		Double clicking acts like `<CR>`
 `<Mouse2>`:		Double clicking acts like `<C-]>`
 
 
