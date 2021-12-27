@@ -1,4 +1,4 @@
--- Load All packer
+-- Load All packer plugins
 require('plug')
 
 -- load keybindings and editor options
@@ -19,6 +19,12 @@ local scheme = require('lib.scheme')
 -- if you don't  want to specify the theme for each component,
 -- you can use the following function
 scheme.load_shared_scheme('everforest')
+
+-- set the statusline and tabline style
+-- you can change the characters used
+-- for seperators in the statusline and tabline
+-- for instance, we can use bubble characters
+-- scheme.load_global_style({'', ''}, {'', ''})
 
 -- load configurations
 -- config.plug loads plugin configurations
