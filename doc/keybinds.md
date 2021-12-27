@@ -22,10 +22,60 @@ Welcome to the nii-nvim keybinds doc! Here you will find references to all of th
 `<Mouse2>`	Right Mouse Button
 `<VimKeys>` 	Is equivalent to the h,j,k,l navigation keys (also equivalent to the arrow keys)
 
-### Default Keybinds
+# Keybinds
 
-# Nvimtree
-*These keybinds only work while focused on the tree window*
+### General
+
+`<C-c>`:			Toggle line comment 
+`<C-n>`:			Toggle relative and absolute line numbers
+
+`WW`:				Write File
+
+`<leader>nf`:		Format buffer with neoformat					| Normal Mode ONLY
+`<leader>ya`:		Yank buffer to system clipboard
+`<leader>yl`:		Yank line to system clipboard
+
+`<leader>~`:		Open Dashboard
+
+### Autocompletion
+
+`<Tab>`:				Select next autocompletion item
+`<S-Tab>`:				Select previous autocompletion item
+`<C-f>`:				Scroll up autocompletion docs
+`<C-d>`:				Scroll down autocompletion docs
+`<C-e>`:				Close autocompletion menu
+`<C-Space>`:			Select complete autocompletion selction
+
+### Text Navigation
+
+`<leader>aH`:		hop.nvim hop by word        					| Normal Mode ONLY
+`<leader>aH`:		hop.nvim hop by line        					| Normal Mode ONLY
+
+
+### Buffer/Window Management
+
+
+`<leader>l`:		Focus window focus to right 					| Normal Mode ONLY
+`<leader>k`:		Focus window focus to top       				| Normal Mode ONLY
+`<leader>j`:		Focus window focus to bottom   	     			| Normal Mode ONLY
+`<leader>h`:		Focus window focus to left      				| Normal Mode ONLY
+
+`<leader>bh`:		Switch to the first buffer in the bufferlist	| Normal Mode ONLY
+`<leader>bj`:		Cycle to the next buffer in the bufferlist		| Normal Mode ONLY	
+`<leader>bk`:		Cycle to the previous buffer in the bufferlist	| Normal Mode ONLY
+`<leader>bl`:		Switch to the last buffer in the bufferlist		| Normal Mode ONLY
+`<leader>bd`:		Delete current buffer
+
+### Terminal
+
+`<leader><CR>`:		Spawn terminal session in vertical split		| Normal Mode ONLY
+`<leader>\`:		Spawn terminal session in horizontal split 		| Normal Mode ONLY
+
+
+## Plugin Binds
+
+### Nvimtree
+*all nvimtree keybinds are the default keybinds*
 
 `<VimKeys>`: 		Navigate Through the tree
 `<CR>`:			Open the selected directory in the ui or will follow a symlink to its location
@@ -54,29 +104,33 @@ Welcome to the nii-nvim keybinds doc! Here you will find references to all of th
 `<Mouse1>`:		Double clicking acts like `<CR>`
 `<Mouse2>`:		Double clicking acts like `<C-]>`
 
+### Gitsigns
 
-# Telescope-nvim
+`]c`:				Priview next hunk
+`[c`:				Priview previous hunk
 
-`<leader>f`: 		Open telescope in find_files mode	| Normal Mode ONLY
-`<leader>F`: 		Open telescope in file_browser mode	| Normal Mode ONLY
+`<leader>gs`:		stage hunk 						| Normal Mode ONLY
+`<leader>gu`:		undo stage hunk					| Normal Mode ONLY
+`<leader>gr`:		reset hunk						| Normal Mode ONLY
+`<leader>gR`:		reset buffer					| Normal Mode ONLY
+`<leader>gp`:		preview hunk					| Normal Mode ONLY
+`<leader>gb`:		blame line						| Normal Mode ONLY
+`<leader>gS`:		stage buffer					| Normal Mode ONLY
+`<leader>gU`:		reset buffer_index				| Normal Mode ONLY
 
-`<leader>g`: 		Open telescope in git_commits mode	| Normal Mode ONLY
-`<leader>G`:		Open telescope in git_branches mode	| Normal Mode ONLY
+`<leader>gs`:		stage hunk by current selection	| Visual Mode ONLY
+`<leader>gr`:		reset hunk by current selection	| Visual Mode ONLY
 
-# Dashbaord
+### Telescope-nvim
 
-`<leader>~`:		Open Dashboard
+`<leader>ff`: 		Open telescope in find_files mode	| Normal Mode ONLY
+`<leader>fw`: 		Open telescope in find_word mode	| Normal Mode ONLY
+`<leader>fF`: 		Open telescope in file_browser mode	| Normal Mode ONLY
 
-# Editor Binds
+`<leader>fg`: 		Open telescope in git_commits mode	| Normal Mode ONLY
+`<leader>fG`:		Open telescope in git_branches mode	| Normal Mode ONLY
 
-### Text
+### Hop.nvim
 
-`<C-c>`:		Toggle line comment (multiple lines can be commented out in visual mode)
-
-### Buffer Management
-
-`<leader>h`:		Switch to the first buffer in the bufferlist	| Normal Mode ONLY
-`<leader>j`:		Cycle to the next buffer in the bufferlist	| Normal Mode ONLY	
-`<leader>k`:		Cycle to the previous buffer in the bufferlist	| Normal Mode ONLY
-`<leader>l`:		Switch to the last buffer in the bufferlist	| Normal Mode ONLY
-`<leader>d`:		Delete current buffer
+`<leader>ah`:		Quickhop in word mode 				| Normal Mode ONLY
+`<leader>aH`:		Quickhop in line mode 				| Normal Mode ONLY

@@ -29,7 +29,7 @@ Nii-nvim is a very minimal neovim configuration focused on creating a functional
 #### **NOTE**: nii-nvim is currently under development, meaning that many things may not work as intended, or may not be implemented at all.
 
 ## Why nii-nvim?
-There are many neovim configurations that exist (i.e. NvChad, Lunar Vim, etc.). However, many of these configurations suffer from a host of problems:
+There are many neovim configurations that exist (i.e. NvChad, Lunar Vim, etc.), however, many of these configurations suffer from a host of problems.
  - Some configurations (like NvChad), have very abstracted and complex codebases.
  - Others rely on having as much overall functionality as possible (like LunarVim).
 
@@ -39,6 +39,11 @@ While none of this is bad, there are some problems that can arise from these cho
 
 nii-nvim provides a solution to these problems by providing only the necessary code in order to make a functioning configuration.
 The end goal of nii-nvim is to be used as a base config for users to extend and add upon, leading to a more unique editing experience.
+ - Complex codebases lead to less freedom for end-user extensibility and configuration, as there is more reliance on teh maintainer of said code.
+ - Users may not use half of what is made available to them simply because they don't need all of that functionality, so all of it may not be necissary
+
+nii-nvim provides a solution to these problems by providing only the bare minimum of necessary code in order to make a functioning configuration.
+The end goal of nii-nvim is to be use as a base config for users to extend and add upon, leading to a more unique editing experience.
 
 Also the name is cute. 	(・3・)
 
