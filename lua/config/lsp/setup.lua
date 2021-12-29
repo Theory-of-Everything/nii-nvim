@@ -1,3 +1,6 @@
+--[[
+	LSP setup script for default capibilities
+--]]
 local fn = vim.fn
 
 -- {{{ on_attach config
