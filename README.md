@@ -26,7 +26,8 @@
 </div>
 
 Nii-nvim is a very minimal neovim configuration focused on creating a functional editor with a minimal amount of code. Nii-nvim also keeps the user in mind by being very extensible and well documented.
-#### **NOTE**: nii-nvim is currently under development, meaning that many things may not work as intended, or may not be implemented at all.
+
+Nii-nvim is finally out of heavy development, thus the project should be considered *mostly stable*
 
 ## Why nii-nvim?
 There are many neovim configurations that exist (i.e. NvChad, Lunar Vim, etc.), however, many of these configurations suffer from a host of problems.
@@ -62,10 +63,18 @@ Also the name is cute. 	(・3・)
 - A handful of plugins that build off neovim's strengths
 - Swag (and Minimalisim!!)
 
+## Contributing
+Contributions are always appreciated! If you would like to contribute, please check out [CONTIBUTING.md](https://github.com/Theory-of-Everything/nii-nvim/blob/master/CONTRIBUTING.md) in the repository root.
+
+If you like sending patches using git's built-in email features, please send all patches to theory@theoryware.net. (also I am still larning this workflow, so bear with me)
+
 ## Support/Community
 If you are looking for help, or are looking for others to interact with, you can join the "official" Matrix room and Discord server
  - Matrix Room: [#nii-nvim:halogen.city](https://matrix.to/#/#nii-nvim:halogen.city)
- - Discord Server: [Invite Link](https://discord.gg/H6WY7cUkfw)
+ - Discord Server: [Invite Link (H6WY7cUkfw)](https://discord.gg/H6WY7cUkfw)
+
+You can also shoot me an email at:
+ - [theory@theoryware.net](mailto:theory@theoryware.net)
 
 # Screenshots
 ## Functionality Showcase
