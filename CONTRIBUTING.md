@@ -9,8 +9,12 @@ In return, I will reciprocate that respect in addressing contributions.
 
 ## Issues/Bug Reports
 
+**Please note: Soon I will be making the transition to sourcehut in the near future. I will keep the github repo open as a mirror however and will occasionally check for issues/prs.**
+
 Please use the [issues](https://github.com/Theory-of-Everything/nii-nvim/issues) page on the GitHub repository to report bugs/issues.
 Keep all issue reports on-topic and relevant to the project.
+
+Issue reports will be moving to the sr.ht [issue tracker](https://todo.sr.ht/~theorytoe/nii-nvim-bugs) in due time. this works *mostly* similar to github's issues tracker.
 
 <a name="code-conventions"></a>
 
@@ -155,7 +159,9 @@ Closes 47,10
 
 <a name="pull-requests"></a>
 
-## Pull requests
+## Submitting Patches/Pull Requests
+
+(NOTE: This method will be deprecated in due time)
 
 Good pull requests - patches, improvements, new features - are a fantastic
 help. They should remain focused in scope and avoid containing unrelated

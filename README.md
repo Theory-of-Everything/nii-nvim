@@ -20,14 +20,15 @@
   
 [![Lua](https://img.shields.io/badge/Made%20With-Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white)]()
 [![Repo_Size](https://img.shields.io/github/languages/code-size/theory-of-everything/nii-nvim?color=orange&label=Repo%20Size&style=for-the-badge)]()
-[![Pull_Requests](https://img.shields.io/github/issues-pr/theory-of-everything/nii-nvim?style=for-the-badge)]()
-[![Issues](https://img.shields.io/github/issues/theory-of-everything/nii-nvim?color=red&style=for-the-badge)]()
+<!-- [![Pull_Requests](https://img.shields.io/github/issues-pr/theory-of-everything/nii-nvim?style=for-the-badge)]() -->
+<!-- [![Issues](https://img.shields.io/github/issues/theory-of-everything/nii-nvim?color=red&style=for-the-badge)]() -->
   
 </div>
 
 Nii-nvim is a very minimal neovim configuration focused on creating a functional editor with a minimal amount of code. Nii-nvim also keeps the user in mind by being very extensible and well documented.
-
 Nii-nvim is finally out of heavy development, thus the project should be considered *mostly stable*
+
+**NOTE:** Active development will be moved to my [sr.ht repo](https://git.sr.ht/~theorytoe/nii-nvim) for this project, It is prefered that you leave issues and patches/pull requests over there, rather than opening issue sand prs on github. However i will still keep an eye on github too.
 
 ## Why nii-nvim?
 There are many neovim configurations that exist (i.e. NvChad, Lunar Vim, etc.), however, many of these configurations suffer from a host of problems.
@@ -64,7 +65,7 @@ Also the name is cute. 	(・3・)
 - Swag (and Minimalisim!!)
 
 ## Contributing
-Contributions are always appreciated! If you would like to contribute, please check out [CONTIBUTING.md](https://github.com/Theory-of-Everything/nii-nvim/blob/master/CONTRIBUTING.md) in the repository root.
+Contributions are always appreciated! If you would like to contribute, please check out [CONTIBUTING.md](./CONTRIBUTING.md) in the repository root.
 
 If you like sending patches using git's built-in email features, please send all patches to theory@theoryware.net. (also I am still larning this workflow, so bear with me)
 
@@ -78,14 +79,15 @@ You can also shoot me an email at:
 
 # Screenshots
 ## Functionality Showcase
-| | |
-|-|-|
-| <div align="center"> LSP and Autocompletion ![lsp](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/feat_completion.png) </div>  | <div align="center"> Hop Motions </div> ![hop](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/feat_hop.png) |
-| <div align="center"> Nvimtree sidebar </div> ![tree](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/feat_tree.png)| <div align="center"> Built-in Docs </div> ![docs](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/helpdoc.png)|
-| <div align="center"> Telescope Fuzzy File Find </div> ![file_find](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/telescope_0.png) | <div align="center"> Telescope Git Branch View/Switcher </div>![git](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/telescope_1.png) |
+![lsp](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/feat_completion.png)
+![hop](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/feat_hop.png)
+![tree](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/feat_tree.png)
+![docs](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/helpdoc.png)
+![file_find](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/telescope_0.png)
+![git](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/telescope_1.png)
 
 ## Theme Showcase
-| | |
-|-|-|
-| <div align="center"> Everforest </div> ![Everforest](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_everforest.png) | <div align="center"> Bluewery </div>![Bluewery](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_bluewery.png) |
-| <div align="center"> Gruvbox-Material </div> ![Gruvbox-material](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_gruvboxmaterial.png) | <div align="center"> Nord </div> ![Nord](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_nord.png) |
+![Everforest](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_everforest.png)
+![Bluewery](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_bluewery.png)
+![Gruvbox-material](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_gruvboxmaterial.png)
+![Nord](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_nord.png)
