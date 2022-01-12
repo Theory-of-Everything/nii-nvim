@@ -34,6 +34,9 @@ map('n', '<leader>~', ':Dashboard<CR>', opt) -- map show dashboard
 -- clipboard mappings
 map('n', '<leader>ya', ':%y+<CR>', opt) -- Copy content of entire buffer to system clipboard
 map('n', '<leader>yl', '"+yy', opt) -- yank current line into system clipboard
+
+-- write buffer changes
+map('n', 'WW', ":w<CR>", opt)
 -- }}}
 
 -- {{{ autocompletion mappings for cmp

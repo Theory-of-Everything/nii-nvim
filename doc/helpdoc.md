@@ -7,8 +7,6 @@ This is currently a work in progress, so contributing to the project would be ve
 [Repo](https://github.com/Theory-of-Everything/nii-nvim)
 
 
-
-
 ## Welcome to the builtin helpdoc!
 This is a In-editor documentation page for nii-nvim. This contains all of the relevant information on the semantics of the config.
 
@@ -25,7 +23,6 @@ This is a In-editor documentation page for nii-nvim. This contains all of the re
 
 ### [03] Contributing to the Project
  - How to contribute to the project's development
-
 
 
 # [01] Technical Overview:
@@ -86,7 +83,7 @@ Plugins to install with Packer are defined in the `lua/plug.lua` file so add you
 ```lua
 return require('packer').startup(function(use)
 ...
-    use {'andweeb/presence.nvim'}
+    use({'andweeb/presence.nvim'})
 ...
 end)
 ```
@@ -148,7 +145,7 @@ There are a multitude of popular themes included with nii-nvim, with a complete 
  - MinimalDark
  - Custom (Boilerplate code)
 
- To define a separate text editor theme and lualine theme, you can use the following:
+ To define a separate text editor theme and lualine theme, you can use the following in the `init.lua` file:
  ```lua
 scheme.load_scheme('Nord')
 scheme.load_lualine_scheme('minimaldark')

@@ -14,8 +14,9 @@ end
 -- lualine setup config
 require('lualine').setup({
 	options = {
-		section_separators = scheme.lualine_style,
-		component_separators = scheme.lualine_seperator,
+
+		section_separators = { left = scheme.lualine_style_left, right = scheme.lualine_style_right },
+		component_separators = { left = scheme.lualine_seperator_left, right = scheme.lualine_seperator_right },
 		theme = lualine_theme,
 	},
 	sections = {

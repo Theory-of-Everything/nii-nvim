@@ -1,5 +1,9 @@
+--[[
+	Setup script for the lua lsp server sumneko
+--]]
 local fn = vim.fn
 
+-- check for the underlying operating system
 local system_name
 if fn.has('mac') == 1 then
 	system_name = 'macOS'
@@ -13,7 +17,17 @@ end
 
 -- set the path to the sumneko installation (ABSOLUTE PATH)
 local sumneko_install_path = fn.stdpath('data') .. '/lspservers/lua-language-server'
-local sumneko_binary = sumneko_install_path .. '/bin/' .. system_name .. '/lua-language-server'
+local pathcheck = sumneko_install_path .. '/bin/' .. system_name
+local sumneko_binary
+
+-- check of weird build directories
+if fn.isdirectory(pathcheck) > 0 then
+	-- set binary path to that with a system directory
+	sumneko_binary = sumneko_install_path .. '/bin/' .. system_name .. '/lua-language-server'
+else
+	-- set binary path to just the (oddly) bin directory
+	sumneko_binary = sumneko_install_path .. '/bin/lua-language-server'
+end
 
 local runtime_path = vim.split(package.path, ';')
 table.insert(runtime_path, 'lua/?.lua')
