@@ -9,8 +9,12 @@ In return, I will reciprocate that respect in addressing contributions.
 
 ## Issues/Bug Reports
 
+**Please note: Soon I will be making the transition to sourcehut in the near future. I will keep the github repo open as a mirror however and will occasionally check for issues/prs.**
+
 Please use the [issues](https://github.com/Theory-of-Everything/nii-nvim/issues) page on the GitHub repository to report bugs/issues.
 Keep all issue reports on-topic and relevant to the project.
+
+Issue reports will be moving to the sr.ht [issue tracker](https://todo.sr.ht/~theorytoe/nii-nvim-bugs) in due time. this works *mostly* similar to github's issues tracker.
 
 <a name="code-conventions"></a>
 
@@ -77,11 +81,6 @@ this is improper tabbing with imporper spacing in relation to the end comment!
 - All code should be well commented, with proper semantics as shown below
 
 ```lua
--- this is how to comment on blick of code
-function myfunc()          -- you can't comment a block like this
-   print('myfunc() ran!')
-end
-
 -- varbles can be commented like this regardless of size
 local mytable = {
    'item1',
@@ -91,10 +90,29 @@ local mytable = {
 
 local myvarinline = nil -- small one-liners can be commented inline too (does not apply for blocks)
 
+
+cmd('syntax enable') 	-- Try to keep one-liners
+o.rnu = true         	-- tabbed the same distance
+o.nu = true         	-- away from code
+o.mouse = 'a'       	-- this makes comments and code
+o.cursorline = true 	-- much more readable
+o.modeline = true   	-- and keeps everything organized
+o.modelines = 5			-- for future me (or you)
+
+-- this is how to comment on block of code
+function myfunc()          -- you can't comment a block like this
+   print('myfunc() ran!')
+
+   -- You CAN however comment on lines
+   -- like this, just make sure there
+   -- is a space above the comment block
+   print('This is more cool stuff')
+end
 ```
 
 - You can format all code automatically with [stylua](https://github.com/johnnymorganz/stylua) this project's stylua configuration is in the `.stylua.toml` file
 - (you may (or may not) need to rename the stylua config file to `stylua.toml` without the dot)
+- stylua tends to mess up on-liner comments. It tends to keep them right next to the code, and not tabbed. (be careful of this please)
 
 <a name="code-conventions"></a>
 
@@ -121,7 +139,7 @@ Here is the TD;DR:
 <BLANK-LINE>
 <footer>
 ```
-Example Commit Message:
+Example Commit Messages:
 ```
 [Issue-Code-26,Issue-Code-32] feat(LoginView): add terminal name in login auth request
 
@@ -130,9 +148,20 @@ Needed for Audit find.
 This closes Issue-Code-26 and refs Issue-Code-32
 ```
 
+(you can also use shorthand for issues)
+```
+[47,10] bug(memory leak): fix memory leak occuring in core module
+
+Fixed memory leak in core module.
+
+Closes 47,10
+```
+
 <a name="pull-requests"></a>
 
-## Pull requests
+## Submitting Patches/Pull Requests
+
+(NOTE: This method will be deprecated in due time)
 
 Good pull requests - patches, improvements, new features - are a fantastic
 help. They should remain focused in scope and avoid containing unrelated
@@ -152,7 +181,7 @@ Please follow the Code Conventions and Commit Messages Guidelines when making co
    git clone https://github.com/<your-username>/nii-nvim.git
    # Navigate to the newly cloned directory
    cd nii-nvim
-   # Assign the original repo to a remote called "upstream"
+   # Assign the original repo to a remote called "origin"
    git remote add origin https://github.com/theory-of-everything/nii-nvim.git
    ```
 
@@ -179,6 +208,6 @@ Please follow the Code Conventions and Commit Messages Guidelines when making co
    ```
 
 6. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
-   with a clear title and description.
+   with a clear title and description. Make sure to follow the commit messages guidelines in case I dont squash.
 
 **IMPORTANT**: By submitting a pull request, you agree to allow me to license your work under the terms of the [GPLv3 LICENCE](LICENSE).
