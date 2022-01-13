@@ -10,7 +10,7 @@
   <span> • </span>
   <a href="https://github.com/Theory-of-Everything/nii-nvim/wiki/Installation">Install</a>
   <span> • </span>
-  <a href="https://github.com/Theory-of-Everything/nii-nvim/blob/master/CONTRIBUTING.md">Contribute</a>
+  <a href="https://git.sr.ht/~theorytoe/nii-nvim/tree/master/item/README.md">Contribute</a>
  <span> • </span>
   <a href="https://github.com/Theory-of-Everything/nii-nvim/blob/master/README.md#supportcommunity">Support</a>
   <p></p>
@@ -36,8 +36,8 @@ There are many neovim configurations that exist (i.e. NvChad, Lunar Vim, etc.), 
  - Others rely on having as much overall functionality as possible (like LunarVim).
 
 While none of this is bad, there are some problems that can arise from these choices:
- - Complex codebases lead to less freedom for end-user extensiblity and configuration, as there is more reliance on the maintainer of said code.
- - Users may not use half of what is made avalible to them simply because they don't need all of that functionality, so all of it may not be necessary.
+ - Complex codebases lead to less freedom for end-user extensibility and configuration, as there is more reliance on the maintainer of said code.
+ - Users may not use half of what is made available to them simply because they don't need all of that functionality, so all of it may not be necessary.
 
 nii-nvim provides a solution to these problems by providing only the necessary code in order to make a functioning configuration.
 The end goal of nii-nvim is to be used as a base config for users to extend and add upon, leading to a more unique editing experience.
@@ -62,20 +62,21 @@ Also the name is cute. 	(・3・)
 - Sane Keybinds for extra added functionality
 - Small codebase for easy extensibility
 - A handful of plugins that build off neovim's strengths
-- Swag (and Minimalisim!!)
+- Swag (and Minimalism!!)
 
 ## Contributing
-Contributions are always appreciated! If you would like to contribute, please check out [CONTIBUTING.md](./CONTRIBUTING.md) in the repository root.
 
-If you like sending patches using git's built-in email features, please send all patches to theory@theoryware.net. (also I am still larning this workflow, so bear with me)
+PLEASE BE WARY! If you are thinking of contributing, please wait. I am currently in the process of moving this project to sr.ht.
+Contributions are always appreciated! If you would like to contribute, please check out [CONTIBUTING.md](./CONTRIBUTING.md) in the repository root.
+If you like sending patches using git's built-in email features, please send all patches to the [nii-nvim-devel](mailto:~theorytoe/nii-nvim-devel@lists.sr.ht) mailing list.
 
 ## Support/Community
 If you are looking for help, or are looking for others to interact with, you can join the "official" Matrix room and Discord server
  - Matrix Room: [#nii-nvim:halogen.city](https://matrix.to/#/#nii-nvim:halogen.city)
  - Discord Server: [Invite Link (H6WY7cUkfw)](https://discord.gg/H6WY7cUkfw)
 
-You can also shoot me an email at:
- - [theory@theoryware.net](mailto:theory@theoryware.net)
+You can also shoot an email to the mailing list:
+ - [~theorytoe/nii-nvim-discuss@lists.sr.ht](https://lists.sr.ht/~theorytoe/nii-nvim-discuss)
 
 # Screenshots
 ## Functionality Showcase
