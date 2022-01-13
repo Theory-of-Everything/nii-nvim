@@ -1,6 +1,6 @@
 # Contributing to nii-nvim
 
-Decided to help and contribute to [nii-nvim](https://github.com/Theory-of-Everything/nii-nvim)? Great! I am always looking for contributors!
+Decided to help and contribute to [nii-nvim](https://sr.ht/~theorytoe/nii-nvim/)? Great! I am always looking for contributors!
 
 Please take a moment to review this document in order to make proper contributions and not waste time of the maintainer.
 
@@ -9,12 +9,12 @@ In return, I will reciprocate that respect in addressing contributions.
 
 ## Issues/Bug Reports
 
-**Please note: Soon I will be making the transition to sourcehut in the near future. I will keep the github repo open as a mirror however and will occasionally check for issues/prs.**
+**NOTE: I will not be consistently reviewing github issues, as I have moved away from github's workflow**
 
-Please use the [issues](https://github.com/Theory-of-Everything/nii-nvim/issues) page on the GitHub repository to report bugs/issues.
+If you encounter any bugs, please submit a ticket to the [issue tracker](https://todo.sr.ht/~theorytoe/nii-nvim-bugs) with a "bug" label.
+If you encounter dependency/update issues file a ticket with the "bump" tag.
 Keep all issue reports on-topic and relevant to the project.
 
-Issue reports will be moving to the sr.ht [issue tracker](https://todo.sr.ht/~theorytoe/nii-nvim-bugs) in due time. this works *mostly* similar to github's issues tracker.
 
 <a name="code-conventions"></a>
 
@@ -76,9 +76,9 @@ this is improper tabbing with imporper spacing in relation to the end comment!
 --]]
 ```
 
-- Tab style should be 4 spaces.
+- Tab style should be 4 spaces (no expandtab).
 - All variables should be cast at the top of the file (unless local to a block)
-- All code should be well commented, with proper semantics as shown below
+- All code should be well commented, with proper semantics as shown below.
 
 ```lua
 -- varbles can be commented like this regardless of size
@@ -160,6 +160,21 @@ Closes 47,10
 <a name="pull-requests"></a>
 
 ## Submitting Patches/Pull Requests
+
+### Submitting a Patch:
+
+If you want to submit a patch to the project, please follow the current steps (there are 2 methods):
+
+#### Local Method
+
+**BEFORE** you make changes to the source tree, checkout a new branch:
+This will prevent issues arising when formatting/submitting patches
+```bash
+git branch <branch-name>
+git checkout <branch-name>
+```
+
+### Submitting a Pull Request
 
 (NOTE: This method will be deprecated in due time)
 
