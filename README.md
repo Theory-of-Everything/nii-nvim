@@ -41,11 +41,6 @@ While none of this is bad, there are some problems that can arise from these cho
 
 nii-nvim provides a solution to these problems by providing only the necessary code in order to make a functioning configuration.
 The end goal of nii-nvim is to be used as a base config for users to extend and add upon, leading to a more unique editing experience.
- - Complex codebases lead to less freedom for end-user extensibility and configuration, as there is more reliance on teh maintainer of said code.
- - Users may not use half of what is made available to them simply because they don't need all of that functionality, so all of it may not be necissary
-
-nii-nvim provides a solution to these problems by providing only the bare minimum of necessary code in order to make a functioning configuration.
-The end goal of nii-nvim is to be use as a base config for users to extend and add upon, leading to a more unique editing experience.
 
 Also the name is cute. 	(・3・)
 
