@@ -33,5 +33,5 @@ g.dashboard_custom_section = {
 
 g.dashboard_custom_footer = {
 	'	',
-	'▷ nii-nvim v0.1.1-alpha ◁',
+	'▷ nii-nvim ◁',
 }
