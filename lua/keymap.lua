@@ -7,11 +7,15 @@ local function map(mode, bind, exec, opts)
 	vim.api.nvim_set_keymap(mode, bind, exec, opts)
 end
 
+local function unmap(mode, bind)
+	vim.api.nvim_del_keymap(mode, bind)
+end
+
 local opt = {} --empty opt for maps with no extra options
 local M = {}
 -- }}}
 
---[[ 
+--[[
     MAPPING:
 	map takes 4 args:
 		The first is the type, whether in all, normal, insert etc. (reference: https://github.com/nanotee/nvim-lua-guide#defining-mappings)
@@ -23,8 +27,13 @@ local M = {}
 		map("n", "<C-n>", ":set rnu!<CR>", opt)
 --]]
 
+-- {{{ Umapping
+--unmap('n', '<leader>f')
+-- }}}
+
 -- {{{ misc bindings
 vim.g.mapleader = ' ' -- Map leader key to space
+vim.g.maplocalleader = ','
 map('n', '<C-n>', ':set rnu!<CR>', opt) -- toggle relative line numbers
 map('', '<C-c>', ':CommentToggle<CR>', opt) -- toggle comment on current line or selection
 map('', '<C-t>', ':NvimTreeToggle<CR>', opt) -- toggle nvimtree
@@ -102,15 +111,25 @@ map('t', '<C-esc>', '<C-\\><C-n>', opt)
 
 -- {{{ telescope pullup
 map('n', '<leader>ff', ':Telescope find_files<CR>', { noremap = true })
-map('n', '<leader>fF', ':Telescope file_browser<CR>', { noremap = true })
 map('n', '<leader>fw', ':Telescope live_grep<CR>', { noremap = true })
 map('n', '<leader>fg', ':Telescope git_commits<CR>', { noremap = true })
 map('n', '<leader>fG', ':Telescope git_branches<CR>', { noremap = true })
+map('n', '<leader>fe', ':lua require(\'telescope.builtin\').symbols({ sources = { \'kaomoji\'}})<CR>', { noremap = true })
 -- }}}
 
--- hop.nvim
-map('n', '<leader>aH', ':HopWord<CR>', opt)
-map('n', '<leader>ah', ':HopLine<CR>', opt)
+-- {{{ hop.nvim
+map('n', '<leader>ah', ':HopWord<CR>', opt)
+map('n', '<leader>ak', ':HopWordBC<CR>', opt)
+map('n', '<leader>aj', ':HopWordAC<CR>', opt)
+map('n', '<leader>al', ':HopWordMW<CR>', opt)
+map('n', '<leader>ac', ':HopChar1<CR>', opt)
+map('n', '<leader>aC', ':HopChar2<CR>', opt)
+map('n', '<leader>ag', ':HopPattern<CR>', opt)
+map('n', '<leader>an', ':HopLineStart<CR>', opt)
+map('n', '<leader>af', ':HopWordCurrentLine<CR>', opt)
+-- }}}
+
+map('n', '<leader>s', ':Telescope buffers<CR>', opt)
 
 -- returns any externally-required keymaps for usage
 return M
