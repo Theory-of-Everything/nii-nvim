@@ -53,7 +53,7 @@ require('packer').startup({
 		use('sainnhe/gruvbox-material')
 
 		-- neesh themes
-		use('sainnhe/everforest')
+		use('catppuccin/nvim')
 		use('relastle/bluewery.vim')
 		use('haishanh/night-owl.vim')
 		-- }}}

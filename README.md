@@ -83,7 +83,7 @@ You can also shoot an email to the mailing list:
 ![git](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/telescope_1.png)
 
 ## Theme Showcase
-![Everforest](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_everforest.png)
+![Catppuccin](https://raw.githubusercontent.com/catppuccin/nvim/dev/assets/ss.png)
 ![Bluewery](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_bluewery.png)
 ![Gruvbox-material](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_gruvboxmaterial.png)
 ![Nord](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_nord.png)

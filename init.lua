@@ -9,7 +9,7 @@ require('autocmds')
 -- load theme loading library
 local scheme = require('lib.scheme')
 
--- Load Themes (loads everforest theme by default)
+-- Load Themes (loads catppuccin theme by default)
 -- load editor color theme
 -- scheme.load_scheme('everforest')
 
@@ -18,7 +18,8 @@ local scheme = require('lib.scheme')
 
 -- if you don't  want to specify the theme for each component,
 -- you can use the following function
-scheme.load_shared_scheme('everforest')
+-- NOTE: I'm too lazy to figure out how this works so it hasn't been implemented for catppuccin
+-- scheme.load_shared_scheme('everforest')
 
 -- set the statusline and tabline style
 -- you can change the characters used
