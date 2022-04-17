@@ -62,20 +62,24 @@ local lualine_def_styles = {
 M.scheme = 'everforest' -- specifies scheme. default is "everforest"
 
 -- specifies line style
-M.lualine_style_left = ''
-M.lualine_style_right = ''
+-- M.lualine_style_left = ''
+-- M.lualine_style_right = ''
+M.lualine_style_left = ''
+M.lualine_style_right = ''
 
 -- specifies line seperator style
-M.lualine_seperator_left = ''
-M.lualine_seperator_right = ''
+-- M.lualine_seperator_left = ''
+-- M.lualine_seperator_right = ''
+M.lualine_seperator_left = '│'
+M.lualine_seperator_right = '│'
 
 -- tabline styles
 M.tabline_style_left = ''
-M.tabline_style_right = ''
+M.tabline_style_right = ''
 
 -- tabline seperator
 M.tabline_seperator_left = ''
-M.tabline_seperator_right = ''
+M.tabline_seperator_right = ''
 
 -- if the scheme bundled with lualine?
 -- used in config/plug/lualine.lua

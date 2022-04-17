@@ -20,11 +20,11 @@ require('lualine').setup({
 		theme = lualine_theme,
 	},
 	sections = {
-		lualine_a = { 'mode' },
-		lualine_b = { 'branch' },
-		lualine_c = { 'filename' },
-		lualine_x = { 'encoding', 'fileformat', 'filetype' },
-		lualine_y = { 'progress' },
-		lualine_z = { 'location' },
+		lualine_a = { { 'mode', icon = '' } },
+		lualine_b = { { 'branch', icon = '' }, { 'filename', icon = '' } },
+		lualine_c = { 'filetype' },
+		lualine_x = { 'fileformat' },
+		lualine_y = { { 'encoding', icon = '' } },
+		lualine_z = { 'progress', 'location' },
 	},
 })

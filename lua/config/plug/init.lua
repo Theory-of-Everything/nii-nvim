@@ -15,8 +15,10 @@ return {
 	require('config.plug.autopairs'),
 	require('config.plug.telescope'),
 	require('config.plug.nvimcomment'),
-	require('config.plug.nvimcolorizer'),
+    require('config.plug.hexokinase'),
+	-- require('config.plug.nvimcolorizer'),
 	require('config.plug.treesitter'),
+    require('config.plug.presence')
 }
 
 -- # vim foldmethod=marker

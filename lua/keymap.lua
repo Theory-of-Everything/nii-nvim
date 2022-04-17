@@ -34,18 +34,26 @@ local M = {}
 -- {{{ misc bindings
 vim.g.mapleader = ' ' -- Map leader key to space
 vim.g.maplocalleader = ','
-map('n', '<C-n>', ':set rnu!<CR>', opt) -- toggle relative line numbers
+
+map('n', '<leader>', ':WhichKey \'<Space>\'<CR>', { noremap = true, silent = true }) -- which key
+map('n', '<leader>R', ':set rnu!<CR>', opt) -- toggle relative line numbers
 map('', '<C-c>', ':CommentToggle<CR>', opt) -- toggle comment on current line or selection
-map('', '<C-t>', ':NvimTreeToggle<CR>', opt) -- toggle nvimtree
+map('', '<leader>/', ':CommentToggle<CR>', opt) -- toggle comment on current line or selection
+map('', '<C-n>', ':NvimTreeToggle<CR>', opt) -- toggle nvimtree
 map('n', '<leader>nf', ':Neoformat<CR>', { noremap = true }) -- format current buffer with neoformat
 map('n', '<leader>~', ':Dashboard<CR>', opt) -- map show dashboard
 
 -- clipboard mappings
 map('n', '<leader>ya', ':%y+<CR>', opt) -- Copy content of entire buffer to system clipboard
 map('n', '<leader>yl', '"+yy', opt) -- yank current line into system clipboard
+map('', '<leader>y',  '"+y', opt) -- yank selection into system clipboard
 
--- write buffer changes
-map('n', 'WW', ":w<CR>", opt)
+-- write and quit shortcuts
+map('n', 'WW', ':w<CR>', opt)
+map('n', 'WWQ', ':wqa<CR>', opt)
+
+-- glow
+map('n', '<leader>p', ':Glow<CR>', opt)
 -- }}}
 
 -- {{{ autocompletion mappings for cmp
@@ -111,10 +119,11 @@ map('t', '<C-esc>', '<C-\\><C-n>', opt)
 
 -- {{{ telescope pullup
 map('n', '<leader>ff', ':Telescope find_files<CR>', { noremap = true })
+map('n', '<leader>fr', ':Telescope oldfiles<CR>', { noremap = true })
 map('n', '<leader>fw', ':Telescope live_grep<CR>', { noremap = true })
-map('n', '<leader>fg', ':Telescope git_commits<CR>', { noremap = true })
-map('n', '<leader>fG', ':Telescope git_branches<CR>', { noremap = true })
-map('n', '<leader>fe', ':lua require(\'telescope.builtin\').symbols({ sources = { \'kaomoji\'}})<CR>', { noremap = true })
+map('n', '<leader>gc', ':Telescope git_commits<CR>', { noremap = true })
+map('n', '<leader>gB', ':Telescope git_branches<CR>', { noremap = true })
+map('n', '<leader>s', ':Telescope buffers<CR>', opt)
 -- }}}
 
 -- {{{ hop.nvim
@@ -129,7 +138,14 @@ map('n', '<leader>an', ':HopLineStart<CR>', opt)
 map('n', '<leader>af', ':HopWordCurrentLine<CR>', opt)
 -- }}}
 
-map('n', '<leader>s', ':Telescope buffers<CR>', opt)
+-- {{{ jdtls
+map('n', '<A-o>', ':lua require(\'jdtls\').organize_imports()<CR>', opt)
+map('n', '<leader>ev', '<Cmd>lua require(\'jdtls\').extract_variable()<CR>', opt)
+map('v', '<leader>ev', '<Esc><Cmd>lua require(\'jdtls\').extract_variable(true)<CR>', opt)
+map('n', '<leader>ec', '<Cmd>lua require(\'jdtls\').extract_constant()<CR>', opt)
+map('v', '<leader>ec', '<Esc><Cmd>lua require(\'jdtls\').extract_constant(true)<CR>', opt)
+map('v', '<leader>em', '<Esc><Cmd>lua require(\'jdtls\').extract_method(true)<CR>', opt)
+-- }}}
 
 -- returns any externally-required keymaps for usage
 return M

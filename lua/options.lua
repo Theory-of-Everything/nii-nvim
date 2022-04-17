@@ -10,7 +10,7 @@ local g = vim.g
 local o = vim.o
 
 cmd('syntax enable') 	-- syntax highlighting
-o.rnu = true         	-- relative line numbers
+o.rnu = false         	-- relative line numbers
 o.nu = true         	-- line numbers
 o.mouse = 'a'       	-- mouse controls
 o.cursorline = true 	-- highlight line cursor is in
@@ -25,11 +25,10 @@ opt.ignorecase = true
 opt.scrolloff = 8   	-- buffer starts scrolling 8 lines from the end of view
 opt.incsearch = true
 
-
 -- Tab settings
 o.tabstop = 4 			-- 4 tabstop
 o.shiftwidth = 4
-o.expandtab = false    	-- tabs -> spaces
+o.expandtab = true     	-- tabs -> spaces
 o.smartindent = true    -- nice indenting
 
 o.foldmethod = 'marker' -- set fold method to marker

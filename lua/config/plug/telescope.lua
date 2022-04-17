@@ -1,20 +1,20 @@
 require('telescope').setup({
 	defaults = {
 		prompt_prefix = '=> ',
-		selection_caret = ' > ',
+		selection_caret = '>- ',
 		entry_prefix = '   ',
-		-- borderchars = { '═', '│', '═', '│', '╒', '╕', '╛', '╘' },
-		sorting_strategy = "ascending",
+		borderchars = { '━', '┃', '━', '┃', '┏', '┓', '┛', '┗' },
+		sorting_strategy = "descending",
 
-		layout_strategy = 'bottom_pane',
-		layout_config = {
-			height = 25,
-		},
-		borderchars = {
-			prompt = { '═', ' ', ' ', ' ', '═', '═', ' ', ' ' },
-			results = { ' ' },
-			preview = { ' ', ' ', ' ', '│', '│', ' ', ' ', '│' },
-		},
+		-- layout_strategy = 'center',
+		-- layout_config = {
+			-- height = 25,
+		-- },
+		-- borderchars = {
+			-- prompt = { '━', '┃', ' ', '┃', '┣', '┫', ' ', ' ' },
+			-- results = { '━', '┃', '━', '┃', '┣', '┫', '┛', '┗' },
+			-- preview = { '━', '┃', ' ', '┃', '┏', '┓', '┃', '┃' },
+		-- },
 	},
 	extensions = {
 		fzf = {

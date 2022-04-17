@@ -9,7 +9,7 @@ require('lspkind').init({
     -- 'codicons' for codicon preset (requires vscode-codicons font)
     --
     -- default: 'default'
-    preset = 'codicons',
+    preset = 'default',
 
     -- override preset symbols
     --
@@ -51,11 +51,11 @@ formatting = {
 
     -- set a name for each source
     vim_item.menu = ({
-      buffer = "「Buffer」",
-      text = "「Text」",
-      nvim_lsp = "「Lsp」",
-      ultisnips = "「UltiSnips」",
-      nvim_lua = "「Lua」",
+      buffer = " ",
+      text = " ",
+      nvim_lsp = " 擄",
+      ultisnips = " ",
+      nvim_lua = " ",
     })[entry.source.name]
     return vim_item
   end,

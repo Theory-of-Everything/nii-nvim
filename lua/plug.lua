@@ -8,6 +8,9 @@ require('packer').startup({
 		use('neovim/nvim-lspconfig')
 		use('onsails/lspkind-nvim')
 
+        -- java lsp
+        use('mfussenegger/nvim-jdtls')
+
 		-- autocompletion
 		use({
 			'hrsh7th/nvim-cmp',
@@ -17,6 +20,8 @@ require('packer').startup({
 				{ 'hrsh7th/cmp-buffer' },
 			},
 		})
+
+        use({ "petertriho/cmp-git", requires = "nvim-lua/plenary.nvim" })
 
 		-- snippets
 		use('sirver/ultisnips')
@@ -35,12 +40,16 @@ require('packer').startup({
 		use('sbdchd/neoformat')
 		use('phaazon/hop.nvim')
 		use({ 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } })
+        use('liuchengxu/vim-which-key')
+        use('jghauser/mkdir.nvim')
+        use({ 'ellisonleao/glow.nvim', branch = 'main'} )
 		-- }}}
 
-		-- {{{ imporved syntax plugins
+        -- {{{ improved syntax plugins
 		-- these add in a bit more bling and flair to nvim
 		use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
 		use({ 'glepnir/dashboard-nvim', disable = false })
+        use({'rrethy/vim-hexokinase', run = 'make hexokinase'})
 		use('norcalli/nvim-colorizer.lua')
 		-- }}}
 
@@ -57,7 +66,10 @@ require('packer').startup({
 		use('relastle/bluewery.vim')
 		use('haishanh/night-owl.vim')
 		-- }}}
-		--
+
+        -- {{{
+        use('andweeb/presence.nvim')
+        -- }}}
 	end,
 	-- display packer dialouge in the center in a floating window
 	config = {

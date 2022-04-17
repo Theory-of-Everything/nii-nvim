@@ -4,13 +4,13 @@
 local colors = {
 	base_fg = '#2F383E',
 	light_fg = '#9DA9A0',
-	secondary = '#3A454A',
-	background = '#445055',
+    secondary = '#445055',
+	background = '#384348',
 	norm_bg = '#A7C080',
-	ins_bg = '#E67E80',
+	ins_bg = '#7FBBB3',
 	vis_bg = '#D699B6',
-	rep_bg = '#E69875',
-	cmd_bg = '#E69875',
+	rep_bg = '#E68E80',
+	cmd_bg = '#83C092',
 	int_bg = '#282C34',
 }
 --LuaFormatter on
