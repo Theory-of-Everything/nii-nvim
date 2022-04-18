@@ -35,6 +35,10 @@ require('packer').startup({
 		use('sbdchd/neoformat')
 		use('phaazon/hop.nvim')
 		use({ 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } })
+		use({
+			'folke/which-key.nvim',
+			config = require('config.plug.which-key'),
+		})
 		-- }}}
 
 		-- {{{ imporved syntax plugins
