@@ -6,7 +6,7 @@
 </div>
 
 <div align="center">
-  <a href="https://github.com/Theory-of-Everything/nii-nvim/wiki">Wiki</a>
+  <a href="https://docs.theoryware.net/nii-nvim/migration-branch/">Docs</a>
   <span> • </span>
   <a href="https://github.com/Theory-of-Everything/nii-nvim/wiki/Installation">Install</a>
   <span> • </span>
@@ -28,7 +28,14 @@
 Nii-nvim is a very minimal neovim configuration focused on creating a functional editor with a minimal amount of code. Nii-nvim also keeps the user in mind by being very extensible and well documented.
 Nii-nvim is finally out of heavy development, thus the project should be considered *mostly stable*
 
+# NOTICE!!!!!!!!
+
+You are looking at the obsolite `master` branch, if you wish to migrate your configs and pull a new version of nii-nvim,
+please take a look at the [docs](https://docs.theoryware.net/nii-nvim/migration-branch/)!
+
 **NOTE:** Active development will be moved to my [sr.ht repo](https://git.sr.ht/~theorytoe/nii-nvim) for this project, It is prefered that you leave issues and patches/pull requests over there, rather than opening issue sand prs on github. However i will still keep an eye on github too.
+
+
 
 ## Why nii-nvim?
 There are many neovim configurations that exist (i.e. NvChad, Lunar Vim, etc.), however, many of these configurations suffer from a host of problems.
