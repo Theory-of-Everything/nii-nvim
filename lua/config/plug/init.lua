@@ -14,6 +14,7 @@ return {
 	require('config.plug.dashboard'),
 	require('config.plug.autopairs'),
 	require('config.plug.telescope'),
+	require('config.plug.which-key'),
 	require('config.plug.nvimcomment'),
 	require('config.plug.nvimcolorizer'),
 	require('config.plug.treesitter'),

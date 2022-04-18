@@ -30,15 +30,12 @@ require('packer').startup({
 		use({ 'nvim-telescope/telescope.nvim', requires = { { 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' } } })
 		use({ 'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons' })
 		use({ 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' })
-		use('windwp/nvim-autopairs')
-		use('terrortylor/nvim-comment')
-		use('sbdchd/neoformat')
-		use('phaazon/hop.nvim')
+		use({ 'windwp/nvim-autopairs' })
+		use({ 'terrortylor/nvim-comment' })
+		use({ 'sbdchd/neoformat' })
+		use({ 'phaazon/hop.nvim' })
 		use({ 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } })
-		use({
-			'folke/which-key.nvim',
-			config = require('config.plug.which-key'),
-		})
+		use({ 'folke/which-key.nvim' })
 		-- }}}
 
 		-- {{{ imporved syntax plugins
