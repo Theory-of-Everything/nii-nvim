@@ -109,28 +109,37 @@ Welcome to the nii-nvim keybinds doc! Here you will find references to all of th
 `]c`:				Priview next hunk
 `[c`:				Priview previous hunk
 
-`<leader>gs`:		stage hunk 						| Normal Mode ONLY
-`<leader>gu`:		undo stage hunk					| Normal Mode ONLY
-`<leader>gr`:		reset hunk						| Normal Mode ONLY
-`<leader>gR`:		reset buffer					| Normal Mode ONLY
-`<leader>gp`:		preview hunk					| Normal Mode ONLY
-`<leader>gb`:		blame line						| Normal Mode ONLY
-`<leader>gS`:		stage buffer					| Normal Mode ONLY
-`<leader>gU`:		reset buffer_index				| Normal Mode ONLY
+`<leader>gs`:		stage hunk
+`<leader>gu`:		undo stage hunk
+`<leader>gr`:		reset hunk
+`<leader>gR`:		reset buffer
+`<leader>gp`:		preview hunk
+`<leader>gb`:		blame line
+`<leader>gS`:		stage buffer
+`<leader>gU`:		reset buffer_index
 
-`<leader>gs`:		stage hunk by current selection	| Visual Mode ONLY
-`<leader>gr`:		reset hunk by current selection	| Visual Mode ONLY
+`<leader>gs`:		stage hunk by current selection
+`<leader>gr`:		reset hunk by current selection
 
 ### Telescope-nvim
 
-`<leader>ff`: 		Open telescope in find_files mode	| Normal Mode ONLY
-`<leader>fw`: 		Open telescope in find_word mode	| Normal Mode ONLY
-`<leader>fF`: 		Open telescope in file_browser mode	| Normal Mode ONLY
+`<leader>ff`: 		Open telescope in find_files mode
+`<leader>fw`: 		Open telescope in find_word mode
+`<leader>fF`: 		Open telescope in file_browser mode
 
-`<leader>fg`: 		Open telescope in git_commits mode	| Normal Mode ONLY
-`<leader>fG`:		Open telescope in git_branches mode	| Normal Mode ONLY
+`<leader>fg`: 		Open telescope in git_commits mode
+`<leader>fG`:		Open telescope in git_branches mode
 
 ### Hop.nvim
 
-`<leader>ah`:		Quickhop in word mode 				| Normal Mode ONLY
-`<leader>aH`:		Quickhop in line mode 				| Normal Mode ONLY
+see :h hop for more info
+
+`<leader>ah`:		Quickhop in word mode
+`<leader>ak`:		Quickhop in before cursor
+`<leader>aj`:		Quickhop in after cursor
+`<leader>al`:		Quickhop in word mode
+`<leader>ac`:		Quickhop in 1 character mode
+`<leader>aC`:		Quickhop in 2 character mode
+`<leader>ag`:		Quickhop in pattern mode
+`<leader>an`:		Quickhop in line start
+`<leader>af`:		Quickhop in current line
