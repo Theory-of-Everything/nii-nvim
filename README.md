@@ -1,3 +1,8 @@
+<h1>This project is unmaintained</h1>
+I have no desire to continue work on this project.
+People who wish to maintain this project, please reach out to me.
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <h1 align="center"> nii-nvim:<br><i>a no-nonsense neovim configuration</i></h1>
 <div align="center">
 
