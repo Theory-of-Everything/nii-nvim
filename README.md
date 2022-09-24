@@ -1,3 +1,8 @@
+<h1>This project is unmaintained</h1>
+I have no desire to continue work on this project.
+People who wish to maintain this project, please reach out to me.
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 # nii-nvim: *a no-nonsense neovim configuration*
 ![](https://raw.githubusercontent.com/Theory-of-Everything/imagehost/main/nii-nvim/scrot_logo_1.png)
 
